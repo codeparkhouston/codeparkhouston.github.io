@@ -596,6 +596,13 @@ textarea, input { outline: none; }
 }
 
 /* footer */
+.icons {
+	margin-top: -25px;
+}
+
+.icons a {
+	padding: 5px;
+}
 .contact-form{
 	display:none;
 }
