@@ -20,7 +20,7 @@ body{
 }
 
 body a{
-	color:#b1d95c;
+	color:#111;
 	text-decoration:none;
 }
 body a:hover{
@@ -189,8 +189,67 @@ body a:hover{
 	text-align:center;
 }
 
+/* MailChimp Styles */
+#mc_embed_signup {
+	margin-top: 30px;
+}
+#mc_embed_signup input[type=submit]{
+	background:url(../images/icon-arrow-right.png) no-repeat 154px 22px #b1d95c;
+	border:none;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position:relative;
+	left:-5px;
+	height:60px !important;
+	width:180px !important;
+	font-size:19px;
+	margin:0px;
+	font-family:"PT Sans", sans-serif;
+	font-weight:700;
+	color:#fff;
+	padding-right:20px;
+}
+#mc_embed_signup input[type=submit]:hover{
+	background:url(../images/icon-arrow-right.png) no-repeat 154px 22px #a4c956;
+	-webkit-transition: background-color 200ms linear;
+	-moz-transition: background-color 200ms linear;
+	-o-transition: background-color 200ms linear;
+	-ms-transition: background-color 200ms linear;
+	transition: background-color 200ms linear;
+	cursor:pointer;
+}
+#mc_embed_signup input[type=email], #mc_embed_signup input[type=text]{
+	background:#fff;
+	border:none;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding:20px 20px !important;
+	height:20px;
+	width:230px !important;
+	color:#7f7f7f;
+	font-size:17px;
+	vertical-align: bottom;
+	margin:0px;
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
 
+#mc_embed_signup .mc-field-group {
+	padding-bottom: 0px;
+}
 
+#mc-embedded-subscribe {
+	margin: 0px;
+	width: 180px !important;
+	display: inline-block;
+}
 /* theme form */
 label.error{
 	margin-top:10px;
@@ -649,8 +708,6 @@ textarea, input { outline: none; }
 	float:right;
 	margin-left:10px;
 }
-
-
 
 /* responsive */
 /* Large desktop */
