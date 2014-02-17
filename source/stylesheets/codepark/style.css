@@ -789,10 +789,7 @@ textarea, input { outline: none; }
 		width:724px;
 	}
 }
- 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) { ... }
- 
+
 /* Landscape phones and down */
 @media (max-width: 766px) { 
 	body{
@@ -863,7 +860,6 @@ textarea, input { outline: none; }
 		width:100%;
 		padding:10px 0px;
 	}
-	}
 	.agency-wrap .agency-credit{
 		position:absolute;
 		left:50%;
@@ -916,4 +912,4 @@ textarea, input { outline: none; }
 	    padding-bottom: 23px;
 	    text-align: center;
 	}
- }
+}
