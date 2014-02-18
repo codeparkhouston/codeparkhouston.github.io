@@ -1,0 +1,65 @@
+[
+  {
+    "day" : "Friday, February 21st, 2014",
+    "items" : [
+      {
+        "time" : "6:00pm - 8:30",
+        "heading" : "Installation party",
+        "description" : "Bring your laptop if you can, so we can install Ruby on Rails for you. This is an open block of time so drop in whenever is good for you.  You'll get to meet coaches and fellow Rails Girls!"
+      }
+    ]
+  },
+  {
+    "day" : "Saturday, February 22nd, 2014",
+    "items" : [
+      {
+        "time" : "9:00 am - 10:00",
+        "heading": "Registration, Breakfast/Coffee & Installation Fest",
+        "description": "During the morning, we’ll install Ruby on Rails on your computer while enjoying coffee and breakfast."
+      },
+      {
+        "time" : "10:00 - 10:15",
+        "heading": "Welcome",
+        "description": "We will talk about the day and get a word from our sponsors."
+      },
+      {
+        "time" : "10:15 - 10:45",
+        "heading": "Introduction: The Web as a Restaurant",
+        "description": "Let's learn about what really happens when we type in a web address."
+      },
+      {
+        "time" : "10:45 am - 1 pm",
+        "heading": "Workshop: Let's get coding!",
+        "description": "We will break into small groups and jumpstart your first web application!"
+      },
+      {
+        "time" : "1:00 - 1:30",
+        "heading": "Lunch"
+      },
+      {
+        "time" : "1:30 - 1:45",
+        "heading": "De-coding Websites",
+        "description": "Let's dig a little deeper and understand what's behind the magic of big web apps!"
+      },
+      {
+        "time" : "1:45 - 4",
+        "heading": "Workshop: Keep building!",
+        "description": "We will continue building out your web app."
+      },
+      {
+        "time" : "4 - 6",
+        "heading": "Exploration",
+        "description": "Try different ways of customizing your web app."
+      },
+      {
+        "time" : "6",
+        "heading": "Closing Remarks"
+      },
+      {
+        "time" : "6:30",
+        "heading": "A very Rails Girls dinner!",
+        "description": "Hang out and have dinner with us in Rice Village!"
+      }
+    ]
+  }
+]
