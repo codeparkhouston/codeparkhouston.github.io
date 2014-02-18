@@ -29,6 +29,7 @@ activate :livereload
 # with_layout :admin do
 #   page "/admin/*"
 # end
+page "/railsgirls/*", :layout => "railsgirls"
 
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
