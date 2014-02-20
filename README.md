@@ -1,5 +1,6 @@
-### How to deploy
-1. Commit all your changes
-2. Push to Github
-3. rake build (assuming you have successfully bundled)
+1. Commit your desired changes.
+2. git push origin source
+3. git remote update origin
 4. rake publish
+5. git checkout master
+6. git merge gh-pages
