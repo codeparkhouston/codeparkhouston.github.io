@@ -15,7 +15,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     %title= page_title
     
-    = stylesheet_link_tag "railsgirls"
+    = stylesheet_link_tag "railsgirls-guides"
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Arvo"
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=PT+Sans"
     = javascript_include_tag  "all", "dev", "//use.typekit.net/nbs6fzt.js"
@@ -23,38 +23,23 @@
   %body
     /[if lt IE 7] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
 
-    %header
+    %header.guides.fixed
       .container_12
         %a#logo{:href=>"http://railsgirls.com/houston"}
           %img{:src=>"/images/railsgirls/railsgirls-logo.png",:alt=>"Rails Girls"}
+        %h1
+          Guides
         %nav
-          %a{:href=>"http://railsgirls.com/events.html"} Events
-          %a{:href=>"http://railsgirls.com/materials.html"} Materials
-          %a{:href=>"http://railsgirls.com/press.html"} Press
-          %a{:href=>"http://blog.railsgirls.com"} Blog 
-          %a{:href=>"/railsgirls/events/feb2014/workshop"} Guides
+          %a{:href=>"/railsgirls/events/feb2014/workshop/installation"} Installation
+          %a{:href=>"/railsgirls/events/feb2014/workshop/app"} App
+          %a{:href=>"/railsgirls/events/feb2014/workshop/features"} Exploration!
 
-    #container.container_12.page.clearfix
+    #container.container_12.page.clearfix.has-fixed
       = yield
 
-      .grid_12.alpha
-        %h2{:name=>"schedule"} Schedule
-
-        - data.schedule.each do |schedule|
-          %h2= schedule.day
-          %table.schedule-table
-            %tbody
-              - schedule.items.each do |item|
-                %tr
-                  %th
-                    %strong= item.time
-                  %td
-                    %h3= item.heading
-                    %p= item.description
-          %hr
-
+      %hr
       .grid_12.alpha.header_main
-        %h1.red-heading Proud sponsors of Rails Girls Houston
+        %h1 Proud sponsors of Rails Girls Houston
       - data.sponsors.each_with_index do |sponsor, index|
         - if (index % 4) == 0
           .clear

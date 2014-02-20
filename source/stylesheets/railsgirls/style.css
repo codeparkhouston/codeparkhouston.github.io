@@ -637,3 +637,24 @@ h2 a {
 /*  margin-top: 2em;
   margin-bottom: 2em;*/
 }
+header.guides.fixed{
+  padding: 10px 0;
+  position: fixed;
+  height: auto;
+  width: 100%;
+}
+.has-fixed{
+  padding-top: 70px;
+}
+header h1{
+  /*font-family: Expressway;*/
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 36px;
+  display: inline-block;
+  margin: 0;
+}
+header nav{
+  display: inline-block;
+  margin: 0;
+}
