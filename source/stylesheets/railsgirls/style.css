@@ -264,8 +264,8 @@ header #logo {
 }
 
 nav {
-  margin:0 0 0 250px;
-  padding-top:12px;
+  padding-top: 8px;
+  float: right;
 }
 
 nav a {
@@ -419,7 +419,33 @@ footer a {
 }
 
 .schedule {
-  margin-top:40px;
+  margin-top: 10px;
+
+  h1, h2 {
+    margin: 5px 0;
+  }
+
+  h2 { 
+    font-size: 1.5em;
+    margin: 10px 0 !important;
+  }
+
+  .grid_3 {
+    width: 200px;
+  }
+
+  .time {
+    margin: 0 20px 0 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+  }
+
+  .desc {
+    h3 {
+      margin: 0px;
+    }
+  }
 }
 
 .schedule ul {
@@ -638,13 +664,13 @@ h2 a {
   margin-bottom: 2em;*/
 }
 header.guides.fixed{
-  padding: 10px 0;
+  padding: 20px 0;
   position: fixed;
   height: auto;
   width: 100%;
 }
 .has-fixed{
-  padding-top: 70px;
+  padding-top: 90px;
 }
 header h1{
   /*font-family: Expressway;*/

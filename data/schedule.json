@@ -42,14 +42,9 @@
         "description": "Let's dig a little deeper and understand what's behind the magic of big web apps!"
       },
       {
-        "time" : "1:45 - 4",
-        "heading": "Workshop: Keep building!",
-        "description": "We will continue building out your web app."
-      },
-      {
-        "time" : "4 - 6",
-        "heading": "Exploration",
-        "description": "Try different ways of customizing your web app."
+        "time" : "1:45 - 6",
+        "heading": "Workshop: Keep building and exploring!",
+        "description": "Finish up the starter app and then explore different ways of customizing your web app on the <a href='/railsgirls/events/feb2014/workshop/features'> Exploration! page.</a><br/>Ask your coach for any additional guidance you may need at this time."
       },
       {
         "time" : "6",
