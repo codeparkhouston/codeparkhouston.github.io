@@ -2,7 +2,7 @@
 h1 {
   font-weight: normal;
   font-size: 3em;
-  margin: 0.5em 0 1em;
+  margin: 0.5em 0;
 }
 
 h2 {
@@ -47,7 +47,6 @@ a {
 }
 
 a:hover {
-  color: #E0330C;
   text-decoration: underline;
 }
 

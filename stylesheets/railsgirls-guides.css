@@ -1241,8 +1241,8 @@ header #logo {
 
 /* line 266, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 nav {
-  margin: 0 0 0 250px;
-  padding-top: 12px; }
+  padding-top: 8px;
+  float: right; }
 
 /* line 271, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 nav a {
@@ -1393,102 +1393,121 @@ footer a {
 
 /* line 421, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .schedule {
-  margin-top: 40px; }
+  margin-top: 10px; }
+  /* line 424, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+  .schedule h1, .schedule h2 {
+    margin: 5px 0; }
+  /* line 428, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+  .schedule h2 {
+    font-size: 1.5em;
+    margin: 10px 0 !important; }
+  /* line 433, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+  .schedule .grid_3 {
+    width: 200px; }
+  /* line 437, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+  .schedule .time {
+    margin: 0 20px 0 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right; }
+  /* line 445, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+  .schedule .desc h3 {
+    margin: 0px; }
 
-/* line 425, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 451, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .schedule ul {
   list-style: none;
   margin: 0;
   padding: 0; }
 
-/* line 431, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 457, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .schedule ul li {
   margin: 0 0 0.2em 0;
   display: block; }
 
-/* line 436, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 462, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .schedule ul li.grid_7 {
   font-size: 1.2em;
   color: #333; }
 
-/* line 441, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 467, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .schedule .alpha {
   font-size: 2.4em;
   text-transform: uppercase;
   line-height: 1.3; }
 
-/* line 447, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 473, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .schedule h4.alpha span {
   display: block;
   font-size: 0.5em;
   line-height: 0; }
 
-/* line 453, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 479, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .schedule li.grid_2 {
   text-align: center; }
 
-/* line 457, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 483, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .slogan {
   font-size: 1.5em;
   letter-spacing: 0.5em; }
 
-/* line 462, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 488, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 #inline {
   text-align: center;
   margin: 3em 0;
   display: block; }
 
-/* line 468, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 494, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 #data {
   padding: 20px;
   width: 500px; }
 
-/* line 473, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 499, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 #data h2 {
   border-top: 4px solid #e0330c;
   margin-top: 10px; }
 
-/* line 478, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 504, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 #data label {
   display: block;
   color: #e0330c; }
 
-/* line 483, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 509, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 #data input, #data textarea {
   margin: 5px 0 25px 0;
   width: 97%; }
 
-/* line 485, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 511, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 #data input[type=submit] {
   width: auto; }
 
-/* line 487, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 #data textarea {
   height: 40px; }
 
-/* line 489, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 515, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 #data label.ss-q-help {
   text-transform: none;
   color: #333; }
 
-/* line 494, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 520, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .page {
   padding: 40px 0; }
 
-/* line 498, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 524, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .page h1 {
   font-size: 36px;
   font-weight: normal; }
 
-/* line 503, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 529, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .page h2 {
   margin-top: 40px; }
 
-/* line 507, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 533, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .sec h2 {
   margin-top: 0; }
 
-/* line 509, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 535, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .quotes {
   font-family: Georgia;
   color: #333;
@@ -1500,7 +1519,7 @@ footer a {
   line-height: 1.3;
   float: left; }
 
-/* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 547, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .quotes:before {
   font-size: 3em;
   content: 'â€œ';
@@ -1509,33 +1528,33 @@ footer a {
   color: #e0330c;
   margin-left: -0.7em; }
 
-/* line 530, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 556, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .upcoming span {
   font-size: 70%; }
 
-/* line 534, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 560, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .upcoming {
   overflow: auto;
   margin-bottom: 20px;
   display: block;
   border-color: #ccc; }
 
-/* line 541, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 567, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 h2 a {
   border: 0;
   color: #000; }
 
-/* line 546, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 572, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 #nitty-gritty .upcoming h3 {
   margin-top: 0;
   margin-bottom: 20px; }
 
-/* line 551, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 577, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .upcoming img {
   float: left;
   margin-right: 15px; }
 
-/* line 556, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 582, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .apply-now-link {
   -moz-box-shadow: inset 0px 1px 0px 0px #f29c93;
   -webkit-box-shadow: inset 0px 1px 0px 0px #f29c93;
@@ -1557,24 +1576,24 @@ h2 a {
   text-decoration: none;
   text-shadow: 1px 1px 0px #b23e35; }
 
-/* line 576, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 602, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .apply-now-link:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d3360b), color-stop(1, #fe1a00));
   background: -moz-linear-gradient(center top, #d3360b 5%, #fe1a00 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d3360b', endColorstr='#fe1a00');
   background-color: #d3360b; }
 
-/* line 581, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 607, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .apply-now-link:active {
   position: relative;
   top: 1px; }
 
-/* line 586, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 612, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .sponsor-note {
   font-size: 12px;
   color: #999; }
 
-/* line 591, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 617, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .sponsor-link {
   -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
   -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
@@ -1596,50 +1615,50 @@ h2 a {
   text-decoration: none;
   /*text-shadow:1px 1px 0px #ffffff;*/ }
 
-/* line 611, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 637, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .sponsor-link:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
   background: -moz-linear-gradient(center top, #dfdfdf 5%, #ededed 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
   background-color: #dfdfdf; }
 
-/* line 616, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 642, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .sponsor-link:active {
   position: relative;
   top: 1px; }
 
-/* line 621, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 647, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .schedule-table th {
   width: 20%; }
 
-/* line 625, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 651, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .sponsors {
   /*  margin-top: 2em;
     margin-bottom: 2em;*/ }
-  /* line 626, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+  /* line 652, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
   .sponsors a {
     display: block;
     text-align: center;
     min-height: 100px;
     border-bottom: none; }
-  /* line 632, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+  /* line 658, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
   .sponsors img {
     max-width: 80%;
     max-height: 60px;
     margin: auto; }
 
-/* line 640, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 666, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 header.guides.fixed {
-  padding: 10px 0;
+  padding: 20px 0;
   position: fixed;
   height: auto;
   width: 100%; }
 
-/* line 646, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 672, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 .has-fixed {
-  padding-top: 70px; }
+  padding-top: 90px; }
 
-/* line 649, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 675, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 header h1 {
   /*font-family: Expressway;*/
   font-weight: 200;
@@ -1648,7 +1667,7 @@ header h1 {
   display: inline-block;
   margin: 0; }
 
-/* line 657, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
+/* line 683, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 header nav {
   display: inline-block;
   margin: 0; }
@@ -1657,7 +1676,7 @@ header nav {
 h1 {
   font-weight: normal;
   font-size: 3em;
-  margin: 0.5em 0 1em; }
+  margin: 0.5em 0; }
 
 /* line 8, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 h2 {
@@ -1703,34 +1722,33 @@ a {
 
 /* line 49, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 a:hover {
-  color: #E0330C;
   text-decoration: underline; }
 
-/* line 54, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 53, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 hr {
   border-top-color: #ddd;
   margin: 2em 0; }
 
-/* line 59, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 58, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .indent {
   margin-left: 70px; }
 
-/* line 63, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 62, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home {
   list-style: none;
   margin: 0; }
 
-/* line 68, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 67, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home li {
   padding: 1.5em 0;
   border-bottom: 1px solid #ddd;
   cursor: pointer; }
 
-/* line 74, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 73, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home li:last-child {
   border-bottom: 0; }
 
-/* line 78, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 77, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home li i {
   display: inline-block;
   width: 70px;
@@ -1749,54 +1767,54 @@ hr {
   -webkit-transition: 0.10s background-color ease-in;
   -moz-transition: 0.10s background-color ease-in; }
 
-/* line 97, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 96, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home li:hover i {
   background-color: #d3360b;
   transition: 0.10s background-color ease-in;
   -webkit-transition: 0.10s background-color ease-in;
   -moz-transition: 0.10s background-color ease-in; }
 
-/* line 105, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 104, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home a,
 .home a:hover {
   color: inherit;
   text-decoration: none; }
 
-/* line 110, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 109, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home h3 {
   margin: 0 0 0.5em;
   margin-left: 90px;
   color: #E0330C; }
 
-/* line 116, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 115, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home li:hover h3 {
   text-decoration: underline; }
 
-/* line 120, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 119, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home p {
   font-size: 18px;
   margin-left: 90px; }
 
-/* line 125, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 124, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .hero-links em {
   margin: 0 0.8em;
   color: #999; }
 
-/* line 130, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 129, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .hero-links {
   margin: 2em 0; }
 
-/* line 134, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 133, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .hero {
   padding: 20px 320px 20px 0;
   background: url(../images/guides-hero.png) right 80px no-repeat; }
 
-/* line 138, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 137, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .highlight {
   margin-left: 40px; }
 
 /* Icons for the guide */
-/* line 142, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 141, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-text-editor, i.icon-prompt, i.icon-browser {
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -1807,19 +1825,19 @@ i.icon-text-editor, i.icon-prompt, i.icon-browser {
   height: 50px;
   line-height: 50px; }
 
-/* line 152, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 151, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-text-editor {
   background-image: url("/images/railsgirls/icons/icon-text-editor.png"); }
 
-/* line 156, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 155, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-prompt {
   background-image: url("/images/railsgirls/icons/icon-prompt.png"); }
 
-/* line 160, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 159, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-browser {
   background-image: url("/images/railsgirls/icons/icon-browser.png"); }
 
-/* line 163, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 162, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-small-text-editor, i.icon-small-prompt, i.icon-small-browser {
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -1830,34 +1848,34 @@ i.icon-small-text-editor, i.icon-small-prompt, i.icon-small-browser {
   height: 20px;
   line-height: 20px; }
 
-/* line 173, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 172, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-small-text-editor {
   background-image: url("/images/railsgirls/icons/icon-small-text-editor.png"); }
 
-/* line 176, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 175, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-small-prompt {
   background-image: url("/images/railsgirls/icons/icon-small-prompt.png"); }
 
-/* line 179, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 178, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-small-browser {
   background-image: url("/images/railsgirls/icons/icon-small-browser.png"); }
 
-/* line 183, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 182, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .os-specific {
   margin-bottom: 4em; }
 
-/* line 187, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 186, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .os-specific .picker {
   display: block;
   float: right; }
 
-/* line 192, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 191, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .os-specific .active {
   font-weight: bold; }
 
 /* Correct padding on smaller screens */
 @media (max-width: 767px) {
-  /* line 198, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+  /* line 197, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
   header, footer {
     margin-left: -20px;
     margin-right: -20px;
@@ -1865,7 +1883,7 @@ i.icon-small-browser {
     padding-right: 20px; } }
 /* Don't show the homepage image on mobile */
 @media (max-width: 480px) {
-  /* line 208, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+  /* line 207, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
   .hero {
     padding: 20px 0;
     background: none; } }
