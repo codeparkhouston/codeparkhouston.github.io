@@ -1,0 +1,14 @@
+.features {
+  ul {
+    margin: 0 0 25px 15px;
+    list-style-position: outside;
+    
+    li {
+      font-size: 16px;
+    }
+  }
+
+  #fb {
+
+  }
+}
