@@ -1,5 +1,5 @@
 .grid_12.alpha
-  %h2{:name=>"schedule"} Schedule
+  %h1{:name=>"schedule"} Schedule
 
   - data.schedule.each do |schedule|
     %h2= schedule.day
@@ -12,4 +12,3 @@
             %td
               %h3= item.heading
               %p= item.description
-    %hr
