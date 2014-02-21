@@ -1,366 +1,4 @@
 @charset "US-ASCII";
-/* line 10, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn {
-  display: inline-block;
-  *display: inline;
-  /* IE7 inline-block hack */
-  *zoom: 1;
-  padding: 4px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  color: #333333;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  background-color: whitesmoke;
-  background-image: -moz-linear-gradient(top, white, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
-  background-image: -o-linear-gradient(top, white, #e6e6e6);
-  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE6E6E6', GradientType=0);
-  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #e6e6e6;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-  border: 1px solid #cccccc;
-  *border: 0;
-  border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  *margin-left: .3em;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
-  /* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
-    color: #333333;
-    background-color: #e6e6e6;
-    *background-color: #d9d9d9; }
-  /* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn:active, .btn.active {
-    background-color: #cccccc \9; }
-  /* line 61, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn:first-child {
-    *margin-left: 0; }
-  /* line 30, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-  .btn:hover, .btn:focus {
-    color: #333333;
-    text-decoration: none;
-    background-position: 0 -15px;
-    -webkit-transition: background-position 0.1s linear;
-    -moz-transition: background-position 0.1s linear;
-    -o-transition: background-position 0.1s linear;
-    transition: background-position 0.1s linear; }
-  /* line 41, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-  .btn:focus {
-    outline: thin dotted #333;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px; }
-  /* line 47, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-  .btn.active, .btn:active {
-    background-image: none;
-    outline: 0;
-    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }
-  /* line 55, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-  .btn.disabled, .btn[disabled] {
-    cursor: default;
-    background-image: none;
-    opacity: 0.65;
-    filter: alpha(opacity=65);
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none; }
-
-/* line 70, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-large {
-  padding: 11px 19px;
-  font-size: 17.5px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px; }
-
-/* line 76, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-large [class^="icon-"],
-.btn-large [class*=" icon-"] {
-  margin-top: 4px; }
-
-/* line 81, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-small {
-  padding: 2px 10px;
-  font-size: 11.9px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px; }
-
-/* line 87, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-small [class^="icon-"],
-.btn-small [class*=" icon-"] {
-  margin-top: 0; }
-
-/* line 91, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-mini [class^="icon-"],
-.btn-mini [class*=" icon-"] {
-  margin-top: -1px; }
-
-/* line 96, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-mini {
-  padding: 0px 6px;
-  font-size: 10.5px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px; }
-
-/* line 106, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-block {
-  display: block;
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* line 115, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-block + .btn-block {
-  margin-top: 5px; }
-
-/* line 123, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-input[type="submit"].btn-block,
-input[type="reset"].btn-block,
-input[type="button"].btn-block {
-  width: 100%; }
-
-/* line 139, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-primary.active,
-.btn-warning.active,
-.btn-danger.active,
-.btn-success.active,
-.btn-info.active,
-.btn-inverse.active {
-  color: rgba(255, 255, 255, 0.75); }
-
-/* line 145, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-primary {
-  color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #006ccc;
-  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
-  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0088CC', endColorstr='#FF0044CC', GradientType=0);
-  border-color: #0044cc #0044cc #002a80;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #0044cc;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  /* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
-    color: white;
-    background-color: #0044cc;
-    *background-color: #003bb3; }
-  /* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn-primary:active, .btn-primary.active {
-    background-color: #003399 \9; }
-
-/* line 149, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-warning {
-  color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #f9a732;
-  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
-  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
-  background-image: -o-linear-gradient(top, #fbb450, #f89406);
-  background-image: linear-gradient(to bottom, #fbb450, #f89406);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFBB450', endColorstr='#FFF89406', GradientType=0);
-  border-color: #f89406 #f89406 #ad6704;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #f89406;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  /* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
-    color: white;
-    background-color: #f89406;
-    *background-color: #df8505; }
-  /* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn-warning:active, .btn-warning.active {
-    background-color: #c67605 \9; }
-
-/* line 153, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-danger {
-  color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #da4e49;
-  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
-  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEE5F5B', endColorstr='#FFBD362F', GradientType=0);
-  border-color: #bd362f #bd362f #802420;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #bd362f;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  /* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] {
-    color: white;
-    background-color: #bd362f;
-    *background-color: #a9302a; }
-  /* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn-danger:active, .btn-danger.active {
-    background-color: #942a25 \9; }
-
-/* line 157, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-success {
-  color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #5bb65b;
-  background-image: -moz-linear-gradient(top, #62c462, #51a351);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
-  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
-  background-image: -o-linear-gradient(top, #62c462, #51a351);
-  background-image: linear-gradient(to bottom, #62c462, #51a351);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF62C462', endColorstr='#FF51A351', GradientType=0);
-  border-color: #51a351 #51a351 #387038;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #51a351;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  /* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] {
-    color: white;
-    background-color: #51a351;
-    *background-color: #499249; }
-  /* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn-success:active, .btn-success.active {
-    background-color: #408140 \9; }
-
-/* line 161, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-info {
-  color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #49afcd;
-  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
-  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
-  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
-  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5BC0DE', endColorstr='#FF2F96B4', GradientType=0);
-  border-color: #2f96b4 #2f96b4 #1f6377;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #2f96b4;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  /* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
-    color: white;
-    background-color: #2f96b4;
-    *background-color: #2a85a0; }
-  /* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn-info:active, .btn-info.active {
-    background-color: #24748c \9; }
-
-/* line 165, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-inverse {
-  color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #363636;
-  background-image: -moz-linear-gradient(top, #444444, #222222);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
-  background-image: -webkit-linear-gradient(top, #444444, #222222);
-  background-image: -o-linear-gradient(top, #444444, #222222);
-  background-image: linear-gradient(to bottom, #444444, #222222);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF444444', endColorstr='#FF222222', GradientType=0);
-  border-color: #222222 #222222 black;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #222222;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  /* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active, .btn-inverse.disabled, .btn-inverse[disabled] {
-    color: white;
-    background-color: #222222;
-    *background-color: #151515; }
-  /* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
-  .btn-inverse:active, .btn-inverse.active {
-    background-color: #090909 \9; }
-
-/* line 174, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-button.btn,
-input[type="submit"].btn {
-  *padding-top: 3px;
-  *padding-bottom: 3px; }
-  /* line 177, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-  button.btn::-moz-focus-inner,
-  input[type="submit"].btn::-moz-focus-inner {
-    padding: 0;
-    border: 0; }
-  /* line 186, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-  button.btn.btn-large,
-  input[type="submit"].btn.btn-large {
-    *padding-top: 7px;
-    *padding-bottom: 7px; }
-  /* line 190, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-  button.btn.btn-small,
-  input[type="submit"].btn.btn-small {
-    *padding-top: 3px;
-    *padding-bottom: 3px; }
-  /* line 194, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-  button.btn.btn-mini,
-  input[type="submit"].btn.btn-mini {
-    *padding-top: 1px;
-    *padding-bottom: 1px; }
-
-/* line 207, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-link,
-.btn-link:active,
-.btn-link[disabled] {
-  background-color: transparent;
-  background-image: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none; }
-
-/* line 212, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-link {
-  border-color: transparent;
-  cursor: pointer;
-  color: #0088cc;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0; }
-
-/* line 219, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-link:hover,
-.btn-link:focus {
-  color: #005580;
-  text-decoration: underline;
-  background-color: transparent; }
-
-/* line 225, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
-.btn-link[disabled]:hover,
-.btn-link[disabled]:focus {
-  color: #333333;
-  text-decoration: none; }
-
 /* line 1, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/reset.css */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
@@ -969,6 +607,421 @@ li {
 /* line 1, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/text.css */
 p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset {
   margin-bottom: 20px; }
+
+/* line 10, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+  *zoom: 1;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: whitesmoke;
+  background-image: -moz-linear-gradient(top, white, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
+  background-image: -o-linear-gradient(top, white, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE6E6E6', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e6e6e6;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border: 1px solid #cccccc;
+  *border: 0;
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  *margin-left: .3em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
+  /* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
+    color: #333333;
+    background-color: #e6e6e6;
+    *background-color: #d9d9d9; }
+  /* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn:active, .btn.active {
+    background-color: #cccccc \9; }
+  /* line 61, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn:first-child {
+    *margin-left: 0; }
+  /* line 30, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+  .btn:hover, .btn:focus {
+    color: #333333;
+    text-decoration: none;
+    background-position: 0 -15px;
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear; }
+  /* line 41, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+  .btn:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  /* line 47, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+  .btn.active, .btn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }
+  /* line 55, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+  .btn.disabled, .btn[disabled] {
+    cursor: default;
+    background-image: none;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+
+/* line 70, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-large {
+  padding: 11px 19px;
+  font-size: 17.5px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
+
+/* line 76, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-large [class^="icon-"],
+.btn-large [class*=" icon-"] {
+  margin-top: 4px; }
+
+/* line 81, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-small {
+  padding: 2px 10px;
+  font-size: 11.9px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 87, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-small [class^="icon-"],
+.btn-small [class*=" icon-"] {
+  margin-top: 0; }
+
+/* line 91, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-mini [class^="icon-"],
+.btn-mini [class*=" icon-"] {
+  margin-top: -1px; }
+
+/* line 96, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-mini {
+  padding: 0px 6px;
+  font-size: 10.5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 106, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 115, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-block + .btn-block {
+  margin-top: 5px; }
+
+/* line 123, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%; }
+
+/* line 139, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-primary.active,
+.btn-warning.active,
+.btn-danger.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255, 255, 255, 0.75); }
+
+/* line 145, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-primary {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #006ccc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0088CC', endColorstr='#FF0044CC', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #0044cc;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+  /* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+    color: white;
+    background-color: #0044cc;
+    *background-color: #003bb3; }
+  /* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn-primary:active, .btn-primary.active {
+    background-color: #003399 \9; }
+
+/* line 149, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-warning {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f9a732;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFBB450', endColorstr='#FFF89406', GradientType=0);
+  border-color: #f89406 #f89406 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #f89406;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+  /* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
+    color: white;
+    background-color: #f89406;
+    *background-color: #df8505; }
+  /* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn-warning:active, .btn-warning.active {
+    background-color: #c67605 \9; }
+
+/* line 153, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-danger {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #da4e49;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEE5F5B', endColorstr='#FFBD362F', GradientType=0);
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #bd362f;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+  /* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] {
+    color: white;
+    background-color: #bd362f;
+    *background-color: #a9302a; }
+  /* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn-danger:active, .btn-danger.active {
+    background-color: #942a25 \9; }
+
+/* line 157, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-success {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb65b;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF62C462', endColorstr='#FF51A351', GradientType=0);
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #51a351;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+  /* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] {
+    color: white;
+    background-color: #51a351;
+    *background-color: #499249; }
+  /* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn-success:active, .btn-success.active {
+    background-color: #408140 \9; }
+
+/* line 161, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-info {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5BC0DE', endColorstr='#FF2F96B4', GradientType=0);
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #2f96b4;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+  /* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
+    color: white;
+    background-color: #2f96b4;
+    *background-color: #2a85a0; }
+  /* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn-info:active, .btn-info.active {
+    background-color: #24748c \9; }
+
+/* line 165, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-inverse {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #363636;
+  background-image: -moz-linear-gradient(top, #444444, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
+  background-image: -webkit-linear-gradient(top, #444444, #222222);
+  background-image: -o-linear-gradient(top, #444444, #222222);
+  background-image: linear-gradient(to bottom, #444444, #222222);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF444444', endColorstr='#FF222222', GradientType=0);
+  border-color: #222222 #222222 black;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #222222;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+  /* line 513, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active, .btn-inverse.disabled, .btn-inverse[disabled] {
+    color: white;
+    background-color: #222222;
+    *background-color: #151515; }
+  /* line 521, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_mixins.scss */
+  .btn-inverse:active, .btn-inverse.active {
+    background-color: #090909 \9; }
+
+/* line 174, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+button.btn,
+input[type="submit"].btn {
+  *padding-top: 3px;
+  *padding-bottom: 3px; }
+  /* line 177, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+  button.btn::-moz-focus-inner,
+  input[type="submit"].btn::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+  /* line 186, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+  button.btn.btn-large,
+  input[type="submit"].btn.btn-large {
+    *padding-top: 7px;
+    *padding-bottom: 7px; }
+  /* line 190, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+  button.btn.btn-small,
+  input[type="submit"].btn.btn-small {
+    *padding-top: 3px;
+    *padding-bottom: 3px; }
+  /* line 194, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+  button.btn.btn-mini,
+  input[type="submit"].btn.btn-mini {
+    *padding-top: 1px;
+    *padding-bottom: 1px; }
+
+/* line 207, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+/* line 212, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: #0088cc;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+
+/* line 219, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-link:hover,
+.btn-link:focus {
+  color: #005580;
+  text-decoration: underline;
+  background-color: transparent; }
+
+/* line 225, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_buttons.scss */
+.btn-link[disabled]:hover,
+.btn-link[disabled]:focus {
+  color: #333333;
+  text-decoration: none; }
+
+/* line 8, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_code.scss */
+code,
+pre {
+  padding: 0 3px 2px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 12px;
+  color: #333333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 17, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_code.scss */
+code {
+  padding: 2px 4px;
+  color: #d14;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  white-space: nowrap; }
+
+/* line 26, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_code.scss */
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+  /* line 42, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_code.scss */
+  pre.prettyprint {
+    margin-bottom: 20px; }
+  /* line 47, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_code.scss */
+  pre code {
+    padding: 0;
+    color: inherit;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border: 0; }
+
+/* line 58, /Users/Hana/codeparkhouston.github.io/source/stylesheets/_vendor/_code.scss */
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll; }
 
 /* line 1, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/style.css */
 html {
@@ -1672,6 +1725,333 @@ header nav {
   display: inline-block;
   margin: 0; }
 
+/* line 1, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .hll {
+  background-color: #ffffcc; }
+
+/*.highlight  { background: #f0f0f0; }*/
+/* line 3, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .c {
+  color: #60a0b0;
+  font-style: italic; }
+
+/* Comment */
+/* line 4, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .err {
+  border: 1px solid red; }
+
+/* Error */
+/* line 5, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .k {
+  color: #007020;
+  font-weight: bold; }
+
+/* Keyword */
+/* line 6, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .o {
+  color: #666666; }
+
+/* Operator */
+/* line 7, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .cm {
+  color: #60a0b0;
+  font-style: italic; }
+
+/* Comment.Multiline */
+/* line 8, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .cp {
+  color: #007020; }
+
+/* Comment.Preproc */
+/* line 9, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .c1 {
+  color: #60a0b0;
+  font-style: italic; }
+
+/* Comment.Single */
+/* line 10, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .cs {
+  color: #60a0b0;
+  background-color: #fff0f0; }
+
+/* Comment.Special */
+/* line 11, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .gd {
+  color: #a00000; }
+
+/* Generic.Deleted */
+/* line 12, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .ge {
+  font-style: italic; }
+
+/* Generic.Emph */
+/* line 13, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .gr {
+  color: red; }
+
+/* Generic.Error */
+/* line 14, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .gh {
+  color: #000080;
+  font-weight: bold; }
+
+/* Generic.Heading */
+/* line 15, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .gi {
+  color: #00a000; }
+
+/* Generic.Inserted */
+/* line 16, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .go {
+  color: gray; }
+
+/* Generic.Output */
+/* line 17, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .gp {
+  color: #c65d09;
+  font-weight: bold; }
+
+/* Generic.Prompt */
+/* line 18, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .gs {
+  font-weight: bold; }
+
+/* Generic.Strong */
+/* line 19, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .gu {
+  color: #800080;
+  font-weight: bold; }
+
+/* Generic.Subheading */
+/* line 20, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .gt {
+  color: #0040d0; }
+
+/* Generic.Traceback */
+/* line 21, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .kc {
+  color: #007020;
+  font-weight: bold; }
+
+/* Keyword.Constant */
+/* line 22, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .kd {
+  color: #007020;
+  font-weight: bold; }
+
+/* Keyword.Declaration */
+/* line 23, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .kn {
+  color: #007020;
+  font-weight: bold; }
+
+/* Keyword.Namespace */
+/* line 24, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .kp {
+  color: #007020; }
+
+/* Keyword.Pseudo */
+/* line 25, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .kr {
+  color: #007020;
+  font-weight: bold; }
+
+/* Keyword.Reserved */
+/* line 26, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .kt {
+  color: #902000; }
+
+/* Keyword.Type */
+/* line 27, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .m {
+  color: #40a070; }
+
+/* Literal.Number */
+/* line 28, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .s {
+  color: #4070a0; }
+
+/* Literal.String */
+/* line 29, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .na {
+  color: #4070a0; }
+
+/* Name.Attribute */
+/* line 30, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .nb {
+  color: #007020; }
+
+/* Name.Builtin */
+/* line 31, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .nc {
+  color: #0e84b5;
+  font-weight: bold; }
+
+/* Name.Class */
+/* line 32, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .no {
+  color: #60add5; }
+
+/* Name.Constant */
+/* line 33, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .nd {
+  color: #555555;
+  font-weight: bold; }
+
+/* Name.Decorator */
+/* line 34, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .ni {
+  color: #d55537;
+  font-weight: bold; }
+
+/* Name.Entity */
+/* line 35, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .ne {
+  color: #007020; }
+
+/* Name.Exception */
+/* line 36, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .nf {
+  color: #06287e; }
+
+/* Name.Function */
+/* line 37, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .nl {
+  color: #002070;
+  font-weight: bold; }
+
+/* Name.Label */
+/* line 38, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .nn {
+  color: #0e84b5;
+  font-weight: bold; }
+
+/* Name.Namespace */
+/* line 39, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .nt {
+  color: #062873;
+  font-weight: bold; }
+
+/* Name.Tag */
+/* line 40, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .nv {
+  color: #bb60d5; }
+
+/* Name.Variable */
+/* line 41, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .ow {
+  color: #007020;
+  font-weight: bold; }
+
+/* Operator.Word */
+/* line 42, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .w {
+  color: #bbbbbb; }
+
+/* Text.Whitespace */
+/* line 43, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .mf {
+  color: #40a070; }
+
+/* Literal.Number.Float */
+/* line 44, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .mh {
+  color: #40a070; }
+
+/* Literal.Number.Hex */
+/* line 45, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .mi {
+  color: #40a070; }
+
+/* Literal.Number.Integer */
+/* line 46, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .mo {
+  color: #40a070; }
+
+/* Literal.Number.Oct */
+/* line 47, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .sb {
+  color: #4070a0; }
+
+/* Literal.String.Backtick */
+/* line 48, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .sc {
+  color: #4070a0; }
+
+/* Literal.String.Char */
+/* line 49, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .sd {
+  color: #4070a0;
+  font-style: italic; }
+
+/* Literal.String.Doc */
+/* line 50, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .s2 {
+  color: #4070a0; }
+
+/* Literal.String.Double */
+/* line 51, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .se {
+  color: #4070a0;
+  font-weight: bold; }
+
+/* Literal.String.Escape */
+/* line 52, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .sh {
+  color: #4070a0; }
+
+/* Literal.String.Heredoc */
+/* line 53, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .si {
+  color: #70a0d0;
+  font-style: italic; }
+
+/* Literal.String.Interpol */
+/* line 54, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .sx {
+  color: #c65d09; }
+
+/* Literal.String.Other */
+/* line 55, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .sr {
+  color: #235388; }
+
+/* Literal.String.Regex */
+/* line 56, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .s1 {
+  color: #4070a0; }
+
+/* Literal.String.Single */
+/* line 57, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .ss {
+  color: #517918; }
+
+/* Literal.String.Symbol */
+/* line 58, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .bp {
+  color: #007020; }
+
+/* Name.Builtin.Pseudo */
+/* line 59, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .vc {
+  color: #bb60d5; }
+
+/* Name.Variable.Class */
+/* line 60, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .vg {
+  color: #bb60d5; }
+
+/* Name.Variable.Global */
+/* line 61, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .vi {
+  color: #bb60d5; }
+
+/* Name.Variable.Instance */
+/* line 62, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/code.css */
+.highlight .il {
+  color: #40a070; }
+
+/* Literal.Number.Integer.Long */
 /* line 2, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 h1 {
   font-weight: normal;
@@ -1716,39 +2096,35 @@ ul li {
   margin-bottom: 0.5em;
   line-height: 1.5; }
 
-/* line 45, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
-a {
-  color: #E0330C; }
-
-/* line 49, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 46, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 a:hover {
-  text-decoration: underline; }
+  border-bottom: none; }
 
-/* line 53, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 50, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 hr {
   border-top-color: #ddd;
   margin: 2em 0; }
 
-/* line 58, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 55, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .indent {
   margin-left: 70px; }
 
-/* line 62, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 59, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home {
   list-style: none;
   margin: 0; }
 
-/* line 67, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 64, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home li {
   padding: 1.5em 0;
   border-bottom: 1px solid #ddd;
   cursor: pointer; }
 
-/* line 73, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 70, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home li:last-child {
   border-bottom: 0; }
 
-/* line 77, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 74, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home li i {
   display: inline-block;
   width: 70px;
@@ -1767,54 +2143,54 @@ hr {
   -webkit-transition: 0.10s background-color ease-in;
   -moz-transition: 0.10s background-color ease-in; }
 
-/* line 96, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 93, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home li:hover i {
   background-color: #d3360b;
   transition: 0.10s background-color ease-in;
   -webkit-transition: 0.10s background-color ease-in;
   -moz-transition: 0.10s background-color ease-in; }
 
-/* line 104, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 101, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home a,
 .home a:hover {
   color: inherit;
   text-decoration: none; }
 
-/* line 109, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 106, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home h3 {
   margin: 0 0 0.5em;
   margin-left: 90px;
   color: #E0330C; }
 
-/* line 115, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 112, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home li:hover h3 {
   text-decoration: underline; }
 
-/* line 119, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 116, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .home p {
   font-size: 18px;
   margin-left: 90px; }
 
-/* line 124, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 121, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .hero-links em {
   margin: 0 0.8em;
   color: #999; }
 
-/* line 129, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 126, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .hero-links {
   margin: 2em 0; }
 
-/* line 133, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 130, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .hero {
   padding: 20px 320px 20px 0;
   background: url(../images/guides-hero.png) right 80px no-repeat; }
 
-/* line 137, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 134, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .highlight {
   margin-left: 40px; }
 
 /* Icons for the guide */
-/* line 141, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 138, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-text-editor, i.icon-prompt, i.icon-browser {
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -1825,19 +2201,19 @@ i.icon-text-editor, i.icon-prompt, i.icon-browser {
   height: 50px;
   line-height: 50px; }
 
-/* line 151, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 148, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-text-editor {
   background-image: url("/images/railsgirls/icons/icon-text-editor.png"); }
 
-/* line 155, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 152, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-prompt {
   background-image: url("/images/railsgirls/icons/icon-prompt.png"); }
 
-/* line 159, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 156, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-browser {
   background-image: url("/images/railsgirls/icons/icon-browser.png"); }
 
-/* line 162, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 159, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-small-text-editor, i.icon-small-prompt, i.icon-small-browser {
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -1848,34 +2224,34 @@ i.icon-small-text-editor, i.icon-small-prompt, i.icon-small-browser {
   height: 20px;
   line-height: 20px; }
 
-/* line 172, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 169, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-small-text-editor {
   background-image: url("/images/railsgirls/icons/icon-small-text-editor.png"); }
 
-/* line 175, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 172, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-small-prompt {
   background-image: url("/images/railsgirls/icons/icon-small-prompt.png"); }
 
-/* line 178, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 175, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 i.icon-small-browser {
   background-image: url("/images/railsgirls/icons/icon-small-browser.png"); }
 
-/* line 182, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 179, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .os-specific {
   margin-bottom: 4em; }
 
-/* line 186, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 183, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .os-specific .picker {
   display: block;
   float: right; }
 
-/* line 191, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+/* line 188, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
 .os-specific .active {
   font-weight: bold; }
 
 /* Correct padding on smaller screens */
 @media (max-width: 767px) {
-  /* line 197, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+  /* line 194, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
   header, footer {
     margin-left: -20px;
     margin-right: -20px;
@@ -1883,7 +2259,7 @@ i.icon-small-browser {
     padding-right: 20px; } }
 /* Don't show the homepage image on mobile */
 @media (max-width: 480px) {
-  /* line 207, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
+  /* line 204, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/guides.css */
   .hero {
     padding: 20px 0;
     background: none; } }
