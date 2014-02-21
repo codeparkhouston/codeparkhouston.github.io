@@ -2270,3 +2270,31 @@ i.icon-small-browser {
   /* line 6, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/features.css */
   .features ul li {
     font-size: 16px; }
+
+/* line 16, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/features.css */
+.explore-home {
+  padding-bottom: 20px; }
+  /* line 19, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/features.css */
+  .explore-home h1 {
+    margin: 0px; }
+  /* line 23, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/features.css */
+  .explore-home h3 {
+    font-size: 23px;
+    margin: 5px 0 25px 3px;
+    color: #5a5353; }
+  /* line 29, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/features.css */
+  .explore-home .block {
+    margin-left: 5px;
+    margin-bottom: 15px;
+    border-left: 2px solid gray; }
+    /* line 34, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/features.css */
+    .explore-home .block a, .explore-home .block p {
+      font-size: 14px;
+      border: none;
+      padding-left: 10px; }
+    /* line 40, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/features.css */
+    .explore-home .block a {
+      text-decoration: none; }
+      /* line 43, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/features.css */
+      .explore-home .block a:hover {
+        text-decoration: underline; }
