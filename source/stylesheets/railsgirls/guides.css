@@ -42,13 +42,9 @@ ul li {
   line-height: 1.5;
 }
 
-a {
-  color: #E0330C;
-}
 
 a:hover {
-  color: #E0330C;
-  text-decoration: underline;
+  border-bottom: none;
 }
 
 hr {

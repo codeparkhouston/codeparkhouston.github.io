@@ -5,3 +5,4 @@
 //= require _vendor/jquery/jquery.watermark.min
 //= require _vendor/jquery/waypoints.min
 //= require _vendor/jquery/theme
+//= require prefixfree.min

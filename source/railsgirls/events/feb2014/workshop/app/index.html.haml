@@ -43,24 +43,48 @@
 
   First, let's make the directory:
 
-      mkdir projects
+  <div class="highlight">
+    <pre>
+  <code class="sh">mkdir projects</code></pre>
+  </div>
 
   Then, we will change directory (aka `cd`) into the new `projects` directory:
 
-    cd projects
+  <div class="highlight">
+    <pre>
+  <code class="sh">cd projects</code></pre>
+  </div>
 
   And to get the code from the internet, we ask the `git` program to `clone` it from Code Park:
 
-      git clone https://github.com/codeparkhouston/rails-girls-houston.git
+  <div class="highlight">
+    <pre>
+  <code class="sh">git clone https://github.com/codeparkhouston/rails-girls-houston.git</code></pre>
+  </div>
 
   Finally, we change directory (again `cd`) into the project itself:
 
-      cd rails-girls-houston
+  <div class="highlight">
+    <pre>
+  <code class="sh">cd rails-girls-houston</code></pre>
+  </div>
 
   Now if run `ls`, you should see a bunch of folders with names like `app`, `config` and many more. To start the server for the first time, run:
 
-      rails server
-      [windows] bundle exec rails server
+  <div class="os-specific">
+    <div class="nix">
+      <div class="highlight">
+        <pre>
+  <code class="sh">rails server</code></pre>
+      </div>
+    </div>
+    <div class="win">
+      <div class="highlight">
+        <pre>
+  <code class="sh">bundle exec rails server</code></pre>
+      </div>
+    </div>
+  </div>
 
   Windows note: When you run the server for the first time, it might ask if you want to let it through the Windows firewall. Please do Unblock it.
 
@@ -77,14 +101,20 @@
 
   Open `config/routes.rb` and you should see
 
-      Railsgirlshouston::Application.routes.draw do
-        resources :users, :posts
+  <div class="highlight">
+    <pre>
+  <code class="ruby">Railsgirlshouston::Application.routes.draw do
+    resources :users, :posts
 
-      end
+  end</code></pre>
+  </div>
 
   On a blank line anywhere between `do` on the first line, and the `end` on the last line, add:
 
-      root to: 'static#home'
+  <div class="highlight">
+    <pre>
+  <code class="ruby">root to: 'static#home'</code></pre>
+  </div>
 
   This tells the server that the "root path" should be connected to the "home" action in our "static" controller. What page is our "home" page? Let's refresh the browser and find out.
 
@@ -92,7 +122,11 @@
 
   Now, let's start making this app more of your own creation. Open `app/views/layouts/application.html.erb` in your text editor. Look on line 4 where it says:
 
-      <title>Mini Posts</title>
+.highlight
+  %pre
+    %code.erb &lt;title&gt;Mini Posts&lt;/title&gt;
+
+:markdown
 
   Between the `title` opening and closing tag, you can change the name of your app as it shows in your browser. Try it and refresh the page in your browser!
 
@@ -103,13 +137,29 @@
 
   We're going to make users now. Our users will be simple: A name and an email. Rails has a helpful tool called a "generator" that can make a "model" for us which represents a user and assists in keeping users around in a database. To use this model generator, run:
 
-      rails generate model User name email
+  <div class="highlight">
+    <pre>
+  <code class="sh">rails generate model User name email</code></pre>
+  </div>
 
   This command should say that it has made a whole bunch of files for you. We'll look at those in a moment, but first we need to run some commands to update the database and restart the server:
 
-      rake db:migrate
-      rails server
-      [windows] bundle exec rails server
+  <div class="os-specific">
+    <div class="nix">
+      <div class="highlight">
+        <pre>
+  <code class="sh">rake db:migrate
+  rails server</code></pre>
+      </div>
+    </div>
+    <div class="win">
+      <div class="highlight">
+        <pre>
+  <code class="sh">rake db:migrate
+  bundle exec rails server</code></pre>
+      </div>
+    </div>
+  </div>
 
   When you load [http://localhost:3000/](http://localhost:3000/) again and click the "List All Users" link the navigation bar at the top, you will see a page saying it is "Listing All Users" but has nothing else. This makes sense: We have not made any users yet. There is also a "Make New User" link. Click it.
 
@@ -117,30 +167,39 @@
 
   You can see a section that says
 
-      <div class="form-section">
-        <%= f.label :name %>
-        <%= f.text_field :name %>
-      </div>
+.highlight
+  %pre
+    %code.erb
+      &lt;div class="form-section"&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.label :name %&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.text_field :name %&gt;&#13;&#10;&lt;/div&gt;
+
+:markdown
 
   This makes the single, lonely "Name" label and form field we see on the page. We want to add another named email, which looks very similar, right below it:
 
-      <div class="form-section">
-        <%= f.label :email %>
-        <%= f.text_field :email %>
-      </div>
+.highlight
+  %pre
+    %code.erb
+      &lt;div class="form-section"&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.label :email %&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.text_field :email %&gt;&#13;&#10;&lt;/div&gt;
+
+:markdown
 
   When you refresh the page, you should see this new Email field! Now we need to have a way to submit the form. Right below the email field in `app/views/users/new.html.erb` let's add:
 
-      <div class="form-section">
-        <%= f.submit 'Create User' %>
-      </div>
+.highlight
+  %pre
+    %code.erb
+      &lt;div class="form-section"&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.submit 'Create User' %&gt;&#13;&#10;&lt;/div&gt;
+
+:markdown
 
   And when we refresh the page we the button now exists. You can now make a user!
 
   But there's one last detail: Users can be made without a name or email, even though we really want them to have both. Adding a check on bits of data is called "validating" it. So in our User model file (I promised you we'd get back to it!) we need to add some code. Open up `app/models/user.rb` and make a two new lines before the `end`. In there, we'll type:
 
-      validates_presence_of :name
-      validates_presence_of :email
+  <div class="highlight">
+    <pre>
+  <code class="ruby">validates_presence_of :name
+  validates_presence_of :email</code></pre></div>
 
   This will do exactly what it says: validate that a user must have both a name and email. Try making a user with no email or name now, and you should see the form get mad at you.
 
@@ -151,42 +210,71 @@
 
   We want users to be able to have mini-posts. As with users, we first want a model which represents a Post. Rails can once again help us out with the same generator as before:
 
-      rails generate model Post body:text user:references
+  <div class="highlight">
+    <pre>
+  <code class="sh">rails generate model Post body:text user:references</code></pre>
+  </div>
 
   Note that unlike last time, we have a colon followed by another word within the command. This tells Rails we want something special with that attribute of a post. For instance, we want the body of the post to be a special kind of long text, so we say `:text`, and we want a single Post to be owned by a particular User so we say that the post `:references` a User.
 
   Just like when we made the User model we need to run two commands after generating the model to update the database and restart the server:
 
-      rake db:migrate
-      rails server
-      [windows] bundle exec rails server
+  <div class="os-specific">
+    <div class="nix">
+      <div class="highlight">
+        <pre>
+  <code class="sh">rake db:migrate
+  rails server</code></pre>
+      </div>
+    </div>
+    <div class="win">
+      <div class="highlight">
+        <pre>
+  <code class="sh">rake db:migrate
+  bundle exec rails server</code></pre>
+      </div>
+    </div>
+  </div>
 
   If you open update the model file `app/models/post.rb` you will see the details of the Post model. Interestingly, you see the line
 
-      belongs_to :user
+  <div class="highlight">
+    <pre>
+  <code class="ruby">belongs_to :user</code></pre>
+  </div>
 
   Which does just what it says: a Post belongs to a User. Similar to requiring name and email our User model, let's add these two lines below that one to require post's body not be blank:
 
-      validates_presence_of :body
+  <div class="highlight">
+    <pre>
+  <code class="ruby">validates_presence_of :body</code></pre>
+  </div>
 
   The whole file of `app/models/post.rb` will be quite short:
 
-      class Post < ActiveRecord::Base
-        belongs_to :user
-        validates_presence_of :body
-      end
+  <div class="highlight">
+    <pre>
+  <code class="ruby">class Post &lt; ActiveRecord::Base
+    belongs_to :user
+    validates_presence_of :body
+  end</code></pre>
+  </div>
 
   Now we can open the User model again at `app/models/user.rb` and just before the validations, say that a User can have many Posts by adding:
 
-      has_many :posts
+  <div class="highlight">
+    <pre>
+  <code class="ruby">has_many :posts</code></pre>
+  </div>
 
   To be able to see posts on a User's page, let's add the following to the bottom of the file `app/views/users/show.html.erb` in our text editor:
 
-      <% @user.posts.each do |post| %>
-        <div class="post">
-          <p><%= post.body %></p>
-        </div>
-      <% end -%>
+.highlight
+  %pre
+    %code.erb
+      &lt;% @user.posts.each do |post| %&gt;&#13;&#10;&nbsp;&nbsp;&lt;div class="post"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;%= post.body %&gt;&lt;/p&gt;&#13;&#10;&nbsp;&nbsp;&lt;/div&gt;&#13;&#10;&lt;% end -%&gt;
+
+:markdown
 
   What this does is say "take each of a user's posts, and show the body of the post". When we view a user's page on the server, even if we did everything right, it nothing has changed because we haven't made any posts yet.
 
@@ -195,29 +283,30 @@
 
   First, we need to be able to get to the page. For that, we'll make a new link on the navigation bar that appears at the top of every page. This is in our global layout, where we set our app's title, located at `app/views/layouts/application.html.erb`. Open that and look at the
 
-      <div class="navigation-bar">
+.highlight
+  %pre
+    %code.erb
+      &lt;div class="navigation-bar"&gt;
+
+:markdown
 
   that starts on Line 11. This section controls the buttons at the top of all the pages. We want to add another button that looks like the other two, so on Line 19 we'll add the following:
 
-      <li>
-        <%= link_to "Make New Post", new_post_path %>
-      </li>
+.highlight
+  %pre
+    %code.erb
+      &lt;li&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= link_to "Make New Post", new_post_path %&gt;&#13;&#10;&lt;/li&gt;
+
+:markdown
 
   and the whole section will look like this:
 
-      <div class="navigation-bar">
-        <ul>
-          <li>
-            <%= link_to "List All Users", users_path %>
-          </li>
-          <li>
-            <%= link_to "Make New User", new_user_path %>
-          </li>
-          <li>
-            <%= link_to "Make New Post", new_post_path %>
-          </li>
-        </ul>
-      </div>
+.highlight
+  %pre
+    %code.erb
+      &lt;div class="navigation-bar"&gt;&#13;&#10;&nbsp;&nbsp;&lt;ul&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;%= link_to "List All Users", users_path %&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;%= link_to "Make New User", new_user_path %&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;%= link_to "Make New Post", new_post_path %&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&lt;/ul&gt;&#13;&#10;&lt;/div&gt;
+
+:markdown
 
   Now when you reload any page, there is a "Make New Post" link at the top. Click that and let's check it out!
 
@@ -225,15 +314,16 @@
 
   And just like with our user form, this form is not complete yet. We can see there is a section for which User the form should belong to. Now we need a way to add the body of the Post. This is different from the previous forms we added. It needs to be a bit larger, so we use `text_area` instead of `text_field`:
 
-      <div class="form-section">
-        <%= f.label :body %>
-        <%= f.text_area :body %>
-      </div>
+.highlight
+  %pre
+    %code.erb
+      &lt;div class="form-section"&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.label :body %&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.text_area :body %&gt;&#13;&#10;&lt;/div&gt;
 
   And just like with the new User form, we need a button to submit it:
 
-      <div class="form-section">
-        <%= f.submit 'Post It!' %>
-      </div>
+.highlight
+  %pre
+    %code.erb
+      &lt;div class="form-section"&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.submit 'Post It!' %&gt;&#13;&#10;&lt;/div&gt;
 
   Now when you reload the "Make A Post" page, you will be able to make posts. Even better, the posts will immediately be added to the user you select!

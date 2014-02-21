@@ -9,9 +9,11 @@ $(document).ready(function() {
 	      || $('[name=' + this.hash.slice(1) +']');
 	      if ($target.length) {
 	        var targetOffset = $target.offset().top;
+	        if($('.has-fixed').length){
+	            targetOffset -= 100;
+	        }
 	        $('html,body')
-	        .animate({scrollTop: targetOffset}, {duration: 1000});
-	        // .animate({scrollTop: targetOffset}, {duration: 1000, easing: 'easeInOutExpo'});
+	        .animate({scrollTop: targetOffset}, {duration: 1000, easing: 'easeInOutExpo'});
 	       return false;
 	      }
 	    }
