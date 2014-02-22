@@ -7,10 +7,10 @@
       font-size: 16px;
     }
   }
+}
 
-  #fb {
-
-  }
+#fb {
+  img { margin-bottom: 10px;} 
 }
 
 .explore-home {
