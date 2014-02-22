@@ -2271,6 +2271,10 @@ i.icon-small-browser {
   .features ul li {
     font-size: 16px; }
 
+/* line 13, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/features.css */
+#fb img {
+  margin-bottom: 10px; }
+
 /* line 16, /Users/Hana/codeparkhouston.github.io/source/stylesheets/railsgirls/features.css */
 .explore-home {
   padding-bottom: 20px; }
