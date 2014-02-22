@@ -1,2 +1,13 @@
 .grid_12#geo
   %h1 Geolocation
+  %p 
+    Adding geolocation to posts is really quite easy if you can get your user's IP address. The simplest way to do this in Rails is to use the 
+    %a{href: "http://www.rubygeocoder.com/"}Geocoder gem
+    and save the post's location at the same time as the post in the controller.
+  %p 
+    A small caveat to doing this on your local machine - your request to the controller won't actually contain your real IP address. Copy 
+    %a{href: "http://stackoverflow.com/a/20779437/1795155"}this snippet
+    into /config/development.rb. Change the IP address from '38.89.128.21' to '172.17.3.184'. This will spoof your IP to our location in Rice Village.
+  %p
+    There are a lot more things you can do with the Geocoder gem, this is just a simple use case. Take a look at our hack 
+    %a{href: "https://github.com/codeparkhouston/rails-girls-houston-reference/pull/3"}here.
