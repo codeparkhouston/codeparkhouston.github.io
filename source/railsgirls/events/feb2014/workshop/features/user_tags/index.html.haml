@@ -1,2 +1,19 @@
 .grid_12#fb
-  %h1 User Tags
+  %h1 Tagging users in posts
+  %p 
+    Everyone who has ever used facebook (or most social networking sites) has seen a tagging feature similar to this:
+
+  %img{src: "/images/facebook_tagging.jpeg"}
+
+  %p 
+    We'll try to implement our own, albeit simpler, version of this feature. We won't try to attempt to implement the 'live' tagging functionality, but we can display it after we create the post.
+  
+  %p 
+    Take a look at app/views/users/show.html.erb. See the line containing post.body? We can replace that line with a modified post body. 
+
+  %p 
+    The quickest way to modify the post body is to create a method in the Post model that modifies the original body.
+  
+  %p 
+    Have your coaches work through this part with you.  For simplicity, consider a tagged post to be along the lines of "Hey [Joe]!" You can reveal one solution at this 
+    %a{href: "https://github.com/codeparkhouston/rails-girls-houston-reference/pull/2/files"}link.
