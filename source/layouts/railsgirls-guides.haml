@@ -15,9 +15,11 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     %title= page_title
     
-    = stylesheet_link_tag "railsgirls-guides"
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Arvo"
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=PT+Sans"
+    = stylesheet_link_tag "railsgirls-guides"
+    / = stylesheet_link_tag "railsgirls-print", :media => "print"
+
     = javascript_include_tag  "all"
   
   %body
@@ -36,15 +38,16 @@
     #container.container_12.page.clearfix.has-fixed
       = yield
 
-      %hr
-      .grid_12.alpha.header_main
-        %h1 Proud sponsors of Rails Girls Houston
-      - data.sponsors.each_with_index do |sponsor, index|
-        - if (index % 4) == 0
-          .clear
-        .grid_3.sponsors
-          %a{:href=>sponsor.link, :target=>"_blank"}
-            %img{:src=>sponsor.logo, :alt=>sponsor.name + sponsor.description, :title=>sponsor.name + sponsor.description}
+      .clear
+      .sponsors-block.clearfix
+        .grid_12.alpha.header_main
+          %h1 Proud sponsors of Rails Girls Houston
+        - data.sponsors.each_with_index do |sponsor, index|
+          - if (index % 4) == 0
+            .clear
+          .grid_3.sponsors
+            %a{:href=>sponsor.link, :target=>"_blank"}
+              %img{:src=>sponsor.logo, :alt=>sponsor.name + sponsor.description, :title=>sponsor.name + sponsor.description}
 
 
     %footer

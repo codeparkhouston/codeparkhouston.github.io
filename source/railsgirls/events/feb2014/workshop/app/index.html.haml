@@ -34,7 +34,7 @@
 
   It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands.
 
-  ## *1.* Getting Started!
+  ## *1.*Getting Started!
 
   Step 0 is getting Ruby, Rails and Git installed. If you were not at the Install Party and haven't done that yet, check out the ["Getting Started" page](/railsgirls/events/feb2014/workshop/installation).
 
@@ -99,7 +99,7 @@
   Notice that when the server is running, the command line prompt, which is either a dollar sign `$` or greater-than sign `>` is gone. This is because while the server is running, it has control of the terminal. To stop the server and be able to run new commands in the terminal, hold `CTRL` and press `C`. You will sometimes hear people say `CTRL-C` as if it were a verb, because this is a very common way to politely ask a terminal program to stop.
 
 
-  ## *2.*  Name your app and make a page!
+  ## *2.*Name your app and make a page!
 
   First we're going to give our app a name and give it a real home page.
 
@@ -139,7 +139,7 @@
   Once you've seen the title changing a bit, hit `CTRL-C` in the terminal with the server to stop it for a while.
 
 
-  ## *3.*  Let's make some users!
+  ## *3.*Let's make some users!
 
   We're going to make users now. Our users will be simple: A name and an email. Rails has a helpful tool called a "generator" that can make a "model" for us which represents a user and assists in keeping users around in a database. To use this model generator, run:
 
@@ -212,7 +212,7 @@
   Now you can play around, make users, and see them on the "List All Users" page.
 
 
-  ## *4.*  Create the Posts Model!
+  ## *4.*Create the Posts Model!
 
   We want users to be able to have mini-posts. As with users, we first want a model which represents a Post. Rails can once again help us out with the same generator as before:
 
@@ -285,7 +285,7 @@
   What this does is say "take each of a user's posts, and show the body of the post". When we view a user's page on the server, even if we did everything right, it nothing has changed because we haven't made any posts yet.
 
 
-  ## *5.*  Finally: New Posts!
+  ## *5.*Finally: New Posts!
 
   First, we need to be able to get to the page. For that, we'll make a new link on the navigation bar that appears at the top of every page. This is in our global layout, where we set our app's title, located at `app/views/layouts/application.html.erb`. Open that and look at the
 
