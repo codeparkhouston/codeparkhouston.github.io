@@ -8,9 +8,10 @@
     <meta content='http://railsgirls.com/images/railsgirls-sq.png' property='og:image'>
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Code Park</title>
-    <link href="/stylesheets/railsgirls-guides.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Arvo" media="screen" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=PT+Sans" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/railsgirls-guides.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- = stylesheet_link_tag "railsgirls-print", :media => "print" -->
     <script src="/javascripts/all.js" type="text/javascript"></script>
   </head>
   <body>
@@ -18,10 +19,11 @@
     <header class='guides fixed'>
       <div class='container_12'>
         <a href='/railsgirls/events/feb2014/workshop' id='logo'>
-          <img alt='Rails Girls' src='/images/railsgirls/railsgirls-logo.png'>
+          <img alt='Rails Girls' src='/images/railsgirls/railsgirlshouston-logo.png'>
         </a>
         <nav>
           <a href='/railsgirls/events/feb2014/workshop/installation'>Installation</a>
+          <a href='/railsgirls/events/feb2014/workshop/cherry-pie'>Introduction</a>
           <a href='/railsgirls/events/feb2014/workshop/app'>App</a>
           <a href='/railsgirls/events/feb2014/workshop/features'>Exploration!</a>
         </nav>
@@ -68,7 +70,7 @@
       
       <p>It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you&#8217;re having trouble check the Operating System switcher at the bottom of the commands.</p>
       
-      <h2 id='1_getting_started'><em>1.</em> Getting Started!</h2>
+      <h2 id='1getting_started'><em>1.</em>Getting Started!</h2>
       
       <p>Step 0 is getting Ruby, Rails and Git installed. If you were not at the Install Party and haven&#8217;t done that yet, check out the <a href='/railsgirls/events/feb2014/workshop/installation'>&#8220;Getting Started&#8221; page</a>.</p>
       
@@ -113,7 +115,7 @@
       
       <p>Notice that when the server is running, the command line prompt, which is either a dollar sign <code>$</code> or greater-than sign <code>&gt;</code> is gone. This is because while the server is running, it has control of the terminal. To stop the server and be able to run new commands in the terminal, hold <code>CTRL</code> and press <code>C</code>. You will sometimes hear people say <code>CTRL-C</code> as if it were a verb, because this is a very common way to politely ask a terminal program to stop.</p>
       
-      <h2 id='2_name_your_app_and_make_a_page'><em>2.</em> Name your app and make a page!</h2>
+      <h2 id='2name_your_app_and_make_a_page'><em>2.</em>Name your app and make a page!</h2>
       
       <p>First we&#8217;re going to give our app a name and give it a real home page.</p>
       
@@ -139,7 +141,7 @@
       
       <p>Once you&#8217;ve seen the title changing a bit, hit <code>CTRL-C</code> in the terminal with the server to stop it for a while.</p>
       
-      <h2 id='3_lets_make_some_users'><em>3.</em> Let&#8217;s make some users!</h2>
+      <h2 id='3lets_make_some_users'><em>3.</em>Let&#8217;s make some users!</h2>
       
       <p>We&#8217;re going to make users now. Our users will be simple: A name and an email. Rails has a helpful tool called a &#8220;generator&#8221; that can make a &#8220;model&#8221; for us which represents a user and assists in keeping users around in a database. To use this model generator, run:</p>
       <div class='highlight'>
@@ -183,7 +185,7 @@
       
       <p>Now you can play around, make users, and see them on the &#8220;List All Users&#8221; page.</p>
       
-      <h2 id='4_create_the_posts_model'><em>4.</em> Create the Posts Model!</h2>
+      <h2 id='4create_the_posts_model'><em>4.</em>Create the Posts Model!</h2>
       
       <p>We want users to be able to have mini-posts. As with users, we first want a model which represents a Post. Rails can once again help us out with the same generator as before:</p>
       <div class='highlight'>
@@ -226,7 +228,7 @@
       </div>
       <p>What this does is say &#8220;take each of a user&#8217;s posts, and show the body of the post&#8221;. When we view a user&#8217;s page on the server, even if we did everything right, it nothing has changed because we haven&#8217;t made any posts yet.</p>
       
-      <h2 id='5_finally_new_posts'><em>5.</em> Finally: New Posts!</h2>
+      <h2 id='5finally_new_posts'><em>5.</em>Finally: New Posts!</h2>
       
       <p>First, we need to be able to get to the page. For that, we&#8217;ll make a new link on the navigation bar that appears at the top of every page. This is in our global layout, where we set our app&#8217;s title, located at <code>app/views/layouts/application.html.erb</code>. Open that and look at the</p>
       <div class='highlight'>
@@ -253,78 +255,80 @@
         <pre><code class='erb'>&lt;div class="form-section"&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.submit 'Post It!' %&gt;&#13;&#10;&lt;/div&gt;</code></pre>
         Now when you reload the "Make A Post" page, you will be able to make posts. Even better, the posts will immediately be added to the user you select!
       </div>
-      <hr>
-      <div class='grid_12 alpha header_main'>
-        <h1>Proud sponsors of Rails Girls Houston</h1>
-      </div>
       <div class='clear'></div>
-      <div class='grid_3 sponsors'>
-        <a href='http://www.platformhouston.com/about' target='_blank'>
-          <img alt='Platform Houston is a community campus for accelerating talent and ideas.' src='/images/railsgirls/houston/platformhouston.png' title='Platform Houston is a community campus for accelerating talent and ideas.'>
-        </a>
-      </div>
-      <div class='grid_3 sponsors'>
-        <a href='http://keystoneresources.com/' target='_blank'>
-          <img alt="Keystone Resources is a Brand, Interactive and Proposal Studio who doesn't need to talk with big, fancy six-syllable design words. They're just a group of people that love what they do." src='/images/railsgirls/houston/keystone-resources.png' title="Keystone Resources is a Brand, Interactive and Proposal Studio who doesn't need to talk with big, fancy six-syllable design words. They're just a group of people that love what they do.">
-        </a>
-      </div>
-      <div class='grid_3 sponsors'>
-        <a href='https://github.com/' target='_blank'>
-          <img alt='GitHub helps everyone work together with tools for easier collaboration and better visibility. Check it out — open source is free!' src='/images/railsgirls/houston/github.png' title='GitHub helps everyone work together with tools for easier collaboration and better visibility. Check it out — open source is free!'>
-        </a>
-      </div>
-      <div class='grid_3 sponsors'>
-        <a href='http://poeticsystems.com/' target='_blank'>
-          <img alt='Poetic grew up with the Internet. Now they help it grow.' src='/images/railsgirls/houston/poetic.png' title='Poetic grew up with the Internet. Now they help it grow.'>
-        </a>
-      </div>
-      <div class='clear'></div>
-      <div class='grid_3 sponsors'>
-        <a href='http://moleculesoftware.com/' target='_blank'>
-          <img alt="Molecule Software is the first energy trading risk management software designed with the user's sanity in mind." src='/images/railsgirls/houston/moleculesoftware.png' title="Molecule Software is the first energy trading risk management software designed with the user's sanity in mind.">
-        </a>
-      </div>
-      <div class='grid_3 sponsors'>
-        <a href='http://www.chaione.com' target='_blank'>
-          <img alt='ChaiONE specializes in working with established enterprises to design a roadmap for navigating the dynamic digital landscape.' src='/images/railsgirls/houston/chaione.png' title='ChaiONE specializes in working with established enterprises to design a roadmap for navigating the dynamic digital landscape.'>
-        </a>
-      </div>
-      <div class='grid_3 sponsors'>
-        <a href='http://surgeaccelerator.com/program/RailsGirlsSURGE/' target='_blank'>
-          <img alt='SURGE is the only seed fund and early stage accelerator in the world for entrepreneurs focused on energy software.' src='/images/railsgirls/houston/surgeaccelerator.png' title='SURGE is the only seed fund and early stage accelerator in the world for entrepreneurs focused on energy software.'>
-        </a>
-      </div>
-      <div class='grid_3 sponsors'>
-        <a href='http://www.chalksense.com' target='_blank'>
-          <img alt='ChalkSense is a boutique technology consultancy that provides design, development, training and HR services to early-stage ventures.' src='/images/railsgirls/houston/chalksense.png' title='ChalkSense is a boutique technology consultancy that provides design, development, training and HR services to early-stage ventures.'>
-        </a>
-      </div>
-      <div class='clear'></div>
-      <div class='grid_3 sponsors'>
-        <a href='http://www.theurbanrose.com/' target='_blank'>
-          <img alt='The Urban Rose is an online-store for home-goods and accessories. We are a proud supporter of girls learning to code.' src='/images/railsgirls/houston/urbanrose.png' title='The Urban Rose is an online-store for home-goods and accessories. We are a proud supporter of girls learning to code.'>
-        </a>
-      </div>
-      <div class='grid_3 sponsors'>
-        <a href='https://rubyoffrails.com' target='_blank'>
-          <img alt='Ruby off Rails is a unique course that teaches the language, frameworks, tools, and world-views that make Ruby unique.' src='/images/railsgirls/houston/rubyoffrails.png' title='Ruby off Rails is a unique course that teaches the language, frameworks, tools, and world-views that make Ruby unique.'>
-        </a>
-      </div>
-      <div class='grid_3 sponsors'>
-        <a href='http://www.brightworkcoresearch.com/' target='_blank'>
-          <img alt='Brightwork CoResearch is an open, collaborative research space for indie scientists.' src='/images/railsgirls/houston/brightwork.png' title='Brightwork CoResearch is an open, collaborative research space for indie scientists.'>
-        </a>
-      </div>
-      <div class='grid_3 sponsors'>
-        <a href='https://github.com/hawthornehaus/' target='_blank'>
-          <img alt='Hawthorne Haus wholeheartedly supports learning to code and adventures in hacking, creating and community-ing.' src='/images/railsgirls/houston/hawthorne.png' title='Hawthorne Haus wholeheartedly supports learning to code and adventures in hacking, creating and community-ing.'>
-        </a>
-      </div>
-      <div class='clear'></div>
-      <div class='grid_3 sponsors'>
-        <a href='http://AWISgch.org/' target='_blank'>
-          <img alt='AWIS-GCH aims to support women in STEMM through career development, community service, and networking.' src='/images/railsgirls/houston/awis-gch.png' title='AWIS-GCH aims to support women in STEMM through career development, community service, and networking.'>
-        </a>
+      <div class='sponsors-block clearfix'>
+        <div class='grid_12 alpha header_main'>
+          <h1>Proud sponsors of Rails Girls Houston</h1>
+        </div>
+        <div class='clear'></div>
+        <div class='grid_3 sponsors'>
+          <a href='http://www.platformhouston.com/about' target='_blank'>
+            <img alt='Platform Houston is a community campus for accelerating talent and ideas.' src='/images/railsgirls/houston/platformhouston.png' title='Platform Houston is a community campus for accelerating talent and ideas.'>
+          </a>
+        </div>
+        <div class='grid_3 sponsors'>
+          <a href='http://keystoneresources.com/' target='_blank'>
+            <img alt="Keystone Resources is a Brand, Interactive and Proposal Studio who doesn't need to talk with big, fancy six-syllable design words. They're just a group of people that love what they do." src='/images/railsgirls/houston/keystone-resources.png' title="Keystone Resources is a Brand, Interactive and Proposal Studio who doesn't need to talk with big, fancy six-syllable design words. They're just a group of people that love what they do.">
+          </a>
+        </div>
+        <div class='grid_3 sponsors'>
+          <a href='https://github.com/' target='_blank'>
+            <img alt='GitHub helps everyone work together with tools for easier collaboration and better visibility. Check it out — open source is free!' src='/images/railsgirls/houston/github.png' title='GitHub helps everyone work together with tools for easier collaboration and better visibility. Check it out — open source is free!'>
+          </a>
+        </div>
+        <div class='grid_3 sponsors'>
+          <a href='http://poeticsystems.com/' target='_blank'>
+            <img alt='Poetic grew up with the Internet. Now they help it grow.' src='/images/railsgirls/houston/poetic.png' title='Poetic grew up with the Internet. Now they help it grow.'>
+          </a>
+        </div>
+        <div class='clear'></div>
+        <div class='grid_3 sponsors'>
+          <a href='http://moleculesoftware.com/' target='_blank'>
+            <img alt="Molecule Software is the first energy trading risk management software designed with the user's sanity in mind." src='/images/railsgirls/houston/moleculesoftware.png' title="Molecule Software is the first energy trading risk management software designed with the user's sanity in mind.">
+          </a>
+        </div>
+        <div class='grid_3 sponsors'>
+          <a href='http://www.chaione.com' target='_blank'>
+            <img alt='ChaiONE specializes in working with established enterprises to design a roadmap for navigating the dynamic digital landscape.' src='/images/railsgirls/houston/chaione.png' title='ChaiONE specializes in working with established enterprises to design a roadmap for navigating the dynamic digital landscape.'>
+          </a>
+        </div>
+        <div class='grid_3 sponsors'>
+          <a href='http://surgeaccelerator.com/program/RailsGirlsSURGE/' target='_blank'>
+            <img alt='SURGE is the only seed fund and early stage accelerator in the world for entrepreneurs focused on energy software.' src='/images/railsgirls/houston/surgeaccelerator.png' title='SURGE is the only seed fund and early stage accelerator in the world for entrepreneurs focused on energy software.'>
+          </a>
+        </div>
+        <div class='grid_3 sponsors'>
+          <a href='http://www.chalksense.com' target='_blank'>
+            <img alt='ChalkSense is a boutique technology consultancy that provides design, development, training and HR services to early-stage ventures.' src='/images/railsgirls/houston/chalksense.png' title='ChalkSense is a boutique technology consultancy that provides design, development, training and HR services to early-stage ventures.'>
+          </a>
+        </div>
+        <div class='clear'></div>
+        <div class='grid_3 sponsors'>
+          <a href='http://www.theurbanrose.com/' target='_blank'>
+            <img alt='The Urban Rose is an online-store for home-goods and accessories. We are a proud supporter of girls learning to code.' src='/images/railsgirls/houston/urbanrose.png' title='The Urban Rose is an online-store for home-goods and accessories. We are a proud supporter of girls learning to code.'>
+          </a>
+        </div>
+        <div class='grid_3 sponsors'>
+          <a href='https://rubyoffrails.com' target='_blank'>
+            <img alt='Ruby off Rails is a unique course that teaches the language, frameworks, tools, and world-views that make Ruby unique.' src='/images/railsgirls/houston/rubyoffrails.png' title='Ruby off Rails is a unique course that teaches the language, frameworks, tools, and world-views that make Ruby unique.'>
+          </a>
+        </div>
+        <div class='grid_3 sponsors'>
+          <a href='http://www.brightworkcoresearch.com/' target='_blank'>
+            <img alt='Brightwork CoResearch is an open, collaborative research space for indie scientists.' src='/images/railsgirls/houston/brightwork.png' title='Brightwork CoResearch is an open, collaborative research space for indie scientists.'>
+          </a>
+        </div>
+        <div class='grid_3 sponsors'>
+          <a href='https://github.com/hawthornehaus/' target='_blank'>
+            <img alt='Hawthorne Haus wholeheartedly supports learning to code and adventures in hacking, creating and community-ing.' src='/images/railsgirls/houston/hawthorne.png' title='Hawthorne Haus wholeheartedly supports learning to code and adventures in hacking, creating and community-ing.'>
+          </a>
+        </div>
+        <div class='clear'></div>
+        <div class='grid_3 sponsors'>
+          <a href='http://AWISgch.org/' target='_blank'>
+            <img alt='AWIS-GCH aims to support women in STEMM through career development, community service, and networking.' src='/images/railsgirls/houston/awis-gch.png' title='AWIS-GCH aims to support women in STEMM through career development, community service, and networking.'>
+          </a>
+        </div>
       </div>
     </div>
     <footer>

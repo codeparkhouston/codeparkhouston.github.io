@@ -188,6 +188,11 @@ i.icon-small-browser {
 .os-specific .active {
   font-weight: bold;
 }
+.sponsors-block{
+  border-top: 1px solid #DDDDDD;
+  margin-top: 5em;
+  padding-top: 3em;
+}
 
 /* Correct padding on smaller screens */
 @media (max-width: 767px) {
