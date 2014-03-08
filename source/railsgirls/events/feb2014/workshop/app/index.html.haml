@@ -47,35 +47,35 @@ title: Rails Girls Houston February 2014
 
   <div class="highlight">
     <pre>
-  <code class="sh">mkdir projects</code></pre>
+  <code class="language-bash sh">mkdir projects</code></pre>
   </div>
 
   Then, we will change directory (aka `cd`) into the new `projects` directory:
 
   <div class="highlight">
     <pre>
-  <code class="sh">cd projects</code></pre>
+  <code class="language-bash sh">cd projects</code></pre>
   </div>
 
   And to get the code from the internet, we ask the `git` program to `clone` it from Code Park:
 
   <div class="highlight">
     <pre>
-  <code class="sh">git clone https://github.com/codeparkhouston/rails-girls-houston.git</code></pre>
+  <code class="language-bash sh">git clone https://github.com/codeparkhouston/rails-girls-houston.git</code></pre>
   </div>
 
   Finally, we change directory (again `cd`) into the project itself:
 
   <div class="highlight">
     <pre>
-  <code class="sh">cd rails-girls-houston</code></pre>
+  <code class="language-bash sh">cd rails-girls-houston</code></pre>
   </div>
 
   We need to install all the tools that our application will require. This may take a moment.
 
   <div class="highlight">
     <pre>
-  <code class="sh">bundle install</code></pre>
+  <code class="language-bash sh">bundle install</code></pre>
   </div>
 
   Now if run `ls`, you should see a bunch of folders with names like `app`, `config` and many more. To start the server for the first time, run:
@@ -84,13 +84,13 @@ title: Rails Girls Houston February 2014
     <div class="nix">
       <div class="highlight">
         <pre>
-  <code class="sh">rails server</code></pre>
+  <code class="language-bash sh">rails server</code></pre>
       </div>
     </div>
     <div class="win">
       <div class="highlight">
         <pre>
-  <code class="sh">bundle exec rails server</code></pre>
+  <code class="language-bash sh">bundle exec rails server</code></pre>
       </div>
     </div>
   </div>
@@ -112,7 +112,7 @@ title: Rails Girls Houston February 2014
 
   <div class="highlight">
     <pre>
-  <code class="ruby">Railsgirlshouston::Application.routes.draw do
+  <code class="language-ruby erb">Railsgirlshouston::Application.routes.draw do
     resources :users, :posts
 
   end</code></pre>
@@ -122,7 +122,7 @@ title: Rails Girls Houston February 2014
 
   <div class="highlight">
     <pre>
-  <code class="ruby">root to: 'static#home'</code></pre>
+  <code class="language-ruby erb">root to: 'static#home'</code></pre>
   </div>
 
   This tells the server that the "root path" should be connected to the "home" action in our "static" controller. What page is our "home" page? Let's refresh the browser and find out.
@@ -133,7 +133,7 @@ title: Rails Girls Houston February 2014
 
 .highlight
   %pre
-    %code.erb &lt;title&gt;Mini Posts&lt;/title&gt;
+    %code.language-markup.language-ruby.erb &lt;title&gt;Mini Posts&lt;/title&gt;
 
 :markdown
 
@@ -148,7 +148,7 @@ title: Rails Girls Houston February 2014
 
   <div class="highlight">
     <pre>
-  <code class="sh">rails generate model User name email</code></pre>
+  <code class="language-bash sh">rails generate model User name email</code></pre>
   </div>
 
   This command should say that it has made a whole bunch of files for you. We'll look at those in a moment, but first we need to run some commands to update the database and restart the server:
@@ -157,14 +157,14 @@ title: Rails Girls Houston February 2014
     <div class="nix">
       <div class="highlight">
         <pre>
-  <code class="sh">rake db:migrate
+  <code class="language-bash sh">rake db:migrate
   rails server</code></pre>
       </div>
     </div>
     <div class="win">
       <div class="highlight">
         <pre>
-  <code class="sh">rake db:migrate
+  <code class="language-bash sh">rake db:migrate
   bundle exec rails server</code></pre>
       </div>
     </div>
@@ -178,7 +178,7 @@ title: Rails Girls Houston February 2014
 
 .highlight
   %pre
-    %code.erb
+    %code.language-markup.language-ruby.erb
       &lt;div class="form-section"&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.label :name %&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.text_field :name %&gt;&#13;&#10;&lt;/div&gt;
 
 :markdown
@@ -187,7 +187,7 @@ title: Rails Girls Houston February 2014
 
 .highlight
   %pre
-    %code.erb
+    %code.language-markup.language-ruby.erb
       &lt;div class="form-section"&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.label :email %&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.text_field :email %&gt;&#13;&#10;&lt;/div&gt;
 
 :markdown
@@ -196,7 +196,7 @@ title: Rails Girls Houston February 2014
 
 .highlight
   %pre
-    %code.erb
+    %code.language-markup.language-ruby.erb
       &lt;div class="form-section"&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.submit 'Create User' %&gt;&#13;&#10;&lt;/div&gt;
 
 :markdown
@@ -207,7 +207,7 @@ title: Rails Girls Houston February 2014
 
   <div class="highlight">
     <pre>
-  <code class="ruby">validates_presence_of :name
+  <code class="language-ruby erb">validates_presence_of :name
   validates_presence_of :email</code></pre></div>
 
   This will do exactly what it says: validate that a user must have both a name and email. Try making a user with no email or name now, and you should see the form get mad at you.
@@ -221,7 +221,7 @@ title: Rails Girls Houston February 2014
 
   <div class="highlight">
     <pre>
-  <code class="sh">rails generate model Post body:text user:references</code></pre>
+  <code class="language-bash sh">rails generate model Post body:text user:references</code></pre>
   </div>
 
   Note that unlike last time, we have a colon followed by another word within the command. This tells Rails we want something special with that attribute of a post. For instance, we want the body of the post to be a special kind of long text, so we say `:text`, and we want a single Post to be owned by a particular User so we say that the post `:references` a User.
@@ -232,14 +232,14 @@ title: Rails Girls Houston February 2014
     <div class="nix">
       <div class="highlight">
         <pre>
-  <code class="sh">rake db:migrate
+  <code class="language-bash sh">rake db:migrate
   rails server</code></pre>
       </div>
     </div>
     <div class="win">
       <div class="highlight">
         <pre>
-  <code class="sh">rake db:migrate
+  <code class="language-bash sh">rake db:migrate
   bundle exec rails server</code></pre>
       </div>
     </div>
@@ -249,21 +249,21 @@ title: Rails Girls Houston February 2014
 
   <div class="highlight">
     <pre>
-  <code class="ruby">belongs_to :user</code></pre>
+  <code class="language-ruby erb">belongs_to :user</code></pre>
   </div>
 
   Which does just what it says: a Post belongs to a User. Similar to requiring name and email our User model, let's add these two lines below that one to require post's body not be blank:
 
   <div class="highlight">
     <pre>
-  <code class="ruby">validates_presence_of :body</code></pre>
+  <code class="language-ruby erb">validates_presence_of :body</code></pre>
   </div>
 
   The whole file of `app/models/post.rb` will be quite short:
 
   <div class="highlight">
     <pre>
-  <code class="ruby">class Post &lt; ActiveRecord::Base
+  <code class="language-ruby erb">class Post &lt; ActiveRecord::Base
     belongs_to :user
     validates_presence_of :body
   end</code></pre>
@@ -273,14 +273,14 @@ title: Rails Girls Houston February 2014
 
   <div class="highlight">
     <pre>
-  <code class="ruby">has_many :posts</code></pre>
+  <code class="language-ruby erb">has_many :posts</code></pre>
   </div>
 
   To be able to see posts on a User's page, let's add the following to the bottom of the file `app/views/users/show.html.erb` in our text editor:
 
 .highlight
   %pre
-    %code.erb
+    %code.language-markup.language-ruby.erb
       &lt;% @user.posts.each do |post| %&gt;&#13;&#10;&nbsp;&nbsp;&lt;div class="post"&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;%= post.body %&gt;&lt;/p&gt;&#13;&#10;&nbsp;&nbsp;&lt;/div&gt;&#13;&#10;&lt;% end -%&gt;
 
 :markdown
@@ -294,7 +294,7 @@ title: Rails Girls Houston February 2014
 
 .highlight
   %pre
-    %code.erb
+    %code.language-markup.language-ruby.erb
       &lt;div class="navigation-bar"&gt;
 
 :markdown
@@ -303,7 +303,7 @@ title: Rails Girls Houston February 2014
 
 .highlight
   %pre
-    %code.erb
+    %code.language-markup.language-ruby.erb
       &lt;li&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= link_to "Make New Post", new_post_path %&gt;&#13;&#10;&lt;/li&gt;
 
 :markdown
@@ -312,7 +312,7 @@ title: Rails Girls Houston February 2014
 
 .highlight
   %pre
-    %code.erb
+    %code.language-markup.language-ruby.erb
       &lt;div class="navigation-bar"&gt;&#13;&#10;&nbsp;&nbsp;&lt;ul&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;%= link_to "List All Users", users_path %&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;%= link_to "Make New User", new_user_path %&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;%= link_to "Make New Post", new_post_path %&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&#13;&#10;&nbsp;&nbsp;&lt;/ul&gt;&#13;&#10;&lt;/div&gt;
 
 :markdown
@@ -325,14 +325,18 @@ title: Rails Girls Houston February 2014
 
 .highlight
   %pre
-    %code.erb
+    %code.language-markup.language-ruby.erb
       &lt;div class="form-section"&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.label :body %&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.text_area :body %&gt;&#13;&#10;&lt;/div&gt;
+
+:markdown
 
   And just like with the new User form, we need a button to submit it:
 
 .highlight
   %pre
-    %code.erb
+    %code.language-markup.language-ruby.erb
       &lt;div class="form-section"&gt;&#13;&#10;&nbsp;&nbsp;&lt;%= f.submit 'Post It!' %&gt;&#13;&#10;&lt;/div&gt;
+
+:markdown
 
   Now when you reload the "Make A Post" page, you will be able to make posts. Even better, the posts will immediately be added to the user you select!

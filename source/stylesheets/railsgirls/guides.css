@@ -132,7 +132,8 @@ hr {
   background: url(../images/guides-hero.png) right 80px no-repeat;
 }
 .highlight {
-  margin-left: 40px;
+  /*margin-left: 30px;*/
+  margin-left: 0px;
 }
 /* Icons for the guide */
 i.icon-text-editor, i.icon-prompt, i.icon-browser {
@@ -162,7 +163,7 @@ i.icon-small-text-editor, i.icon-small-prompt, i.icon-small-browser {
   display: inline-block;
   margin-left: 0px;
   float: left;
-  width: 50px;
+  width: 30px;
   height: 20px;
   line-height: 20px;
 }
