@@ -1,0 +1,60 @@
+---
+title: Rails Girls Houston February 2014
+---
+%h1 Setup recipe for Rails Girls
+%p.muted Cooking time: 5 min active / 15 - 30 min passive
+%p To build apps and other things with Ruby on Rails, we need to setup some software and the developer environment for your computer.
+%p 
+  Follow the instructions for your operating system. If you run into any problems, don’t panic. Inform us at the event and we can solve it together. If you are ultimately unable to install you can always use
+  %a{:href=>'https://www.nitrous.io/'}Nitrous.io
+  , a cloud-based environment for developing Rails applications from your browser.
+%hr
+%ul
+  %li
+    %a{:href=>'#setup_for_os_x'}
+      Setup for OS X
+  %li
+    %a{:href=>'#setup_for_windows'}
+      Setup for Windows
+  %li
+    %a{:href=>'#setup_for_linux'}
+      Setup for Linux
+%hr
+%h2
+  %a{:name=>'setup_for_os_x'}
+    Setup for OS X
+%p
+  Install Rails on your machine by following the instructions listed 
+  %a{:href=>'http://guides.railsgirls.com/install/', :target=>'_blank'} here.
+%h2
+  %a{:name=>'setup_for_windows'}
+    Setup for Windows
+%p
+  Install Ruby and Rails via RailsFTW:
+  %a{:href=>'http://railsftw.bryanbibat.net/', :target=>'_blank'} http://railsftw.bryanbibat.net/
+%p Select the big red button that says "Download Latest", and when the download is finished, run the rails-ftw-[some_numbers].exe
+%p The default install options are good, you should not need to change anything. The only thing to watch out for is that the "Install Location" part does not contain any spaces. Ninety-nine percent of the time, it should not have any by default.
+%p
+  Next, we need the 'msysgit' package from a Google Code repository:
+  %a{:href=>'http://code.google.com/p/msysgit/downloads/list?q=full+installer+official+git', :target=>'_blank'} http://code.google.com/p/msysgit/downloads/list?q=full+installer+official+git
+%p Download the most recent version (first in the list). As of February 2014, it will be named "Git-1.9.0-preview[some_numbers].exe". When it is done downloading, run the file and install with the default options.
+%p When it is done installing, open your start menu and type "bash" in the text box. An option called "Git Bash" should come up. Run that program.
+%p This is your terminal. You will be using this to enter all sorts of commands tomorrow. To make sure everything worked properly, type:
+.highlight
+  %pre
+    %code.sh.language-bash ruby -v
+%p And hit enter. The next line should show something that starts with "ruby 2.0", possibly with more numbers afterward, a date, and the word "mingw32". Those are all completely fine.    
+%p Next run the command, being careful to use the exact spaces and hyphens:
+.highlight
+  %pre
+    %code.sh.language-bash gem install bundler --no-ri --no-rdoc
+%p And it should say "Successfully installed bundler-1.5.3" and another line "1 gem installed". If that has worked out, you're all set!    
+%hr
+%h2
+  %a{:name=>'setup_for_linux'}
+    Setup for Linux
+%p This is for Debian-backed distributions. It should work in Unbuntu, Linux Mint and any Debian based on Testing or Sid. If you are running another flavor of Linux, or are running Debian Stable, please speak with a coach.
+%p Otherwise, simply open a terminal and enter the following command to get started!
+.highlight
+  %pre
+    %code.sh.language-bash bash < <(curl -s https://raw.github.com/codeparkhouston/rails-girls-houston-install/master/debian_install_script.sh)

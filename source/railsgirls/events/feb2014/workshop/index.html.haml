@@ -1,0 +1,17 @@
+---
+title: Rails Girls Houston February 2014
+---
+.grid_12.alpha
+  %h1{:name=>"schedule"} Schedule
+
+  - data.schedule.each do |schedule|
+    %h2= schedule.day
+    %table.schedule-table
+      %tbody
+        - schedule.items.each do |item|
+          %tr
+            %th
+              %strong= item.time
+            %td
+              %h3= item.heading
+              %p= item.description

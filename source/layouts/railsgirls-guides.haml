@@ -1,0 +1,78 @@
+;;;
+"title": "RSVP Rails Girls February 2014"
+;;;
+
+!!!5
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    %meta{:content=>"IE=edge,chrome=1", "http-equiv"=>"X-UA-Compatible"}
+    %meta{:content => "width=device-width", :name => "viewport"}
+    %meta{:content => "http://railsgirls.com/images/railsgirls-sq.png", :property => "og:image"}
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    %title= page_title
+    
+    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Arvo"
+    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=PT+Sans"
+    = stylesheet_link_tag "railsgirls-guides"
+    / = stylesheet_link_tag "railsgirls-print", :media => "print"
+
+    = javascript_include_tag  "all"
+  
+  %body
+    /[if lt IE 7] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+
+    %header.guides.fixed
+      .container_12
+        %a#logo{:href=>"/railsgirls/events/feb2014/workshop"}
+          %img{:src=>"/images/railsgirls/railsgirlshouston-logo.png",:alt=>"Rails Girls"}
+        
+        %nav
+          %a{:href=>"/railsgirls/events/feb2014/workshop/installation"} Installation
+          %a{:href=>"/railsgirls/events/feb2014/workshop/cherry-pie"} Introduction
+          %a{:href=>"/railsgirls/events/feb2014/workshop/app"} App
+          %a{:href=>"/railsgirls/events/feb2014/workshop/features"} Exploration!
+
+    #container.container_12.page.clearfix.has-fixed
+      = yield
+
+      .clear
+      .sponsors-block.clearfix
+        .grid_12.alpha.header_main
+          %h1 Proud sponsors of Rails Girls Houston
+        - data.sponsors.each_with_index do |sponsor, index|
+          - if (index % 4) == 0
+            .clear
+          .grid_3.sponsors
+            %a{:href=>sponsor.link, :target=>"_blank"}
+              %img{:src=>sponsor.logo, :alt=>sponsor.name + sponsor.description, :title=>sponsor.name + sponsor.description}
+
+
+    %footer
+      %p
+        2010-2014, Rails Girls.
+        / %a{:href=>'http://railsgirls.com/press.html'}
+        %a{:href=>'mailto:railsgirlshou@gmail.com'}
+          Contact us
+        or follow us on
+        %a{:href=>'http://twitter.com/railsgirlshou',:target=>'_blank'}
+          Twitter
+        %a{:href=>'https://www.facebook.com/railsgirls',:target=>'_blank'}
+          Facebook
+      %p.slogan
+        Get excited and make things!
+
+    = javascript_include_tag  "dev", "guides-only", "//use.typekit.net/nbs6fzt.js"
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-48083894-1', 'codeparkhouston.com');
+      ga('send', 'pageview');
+
+      try{Typekit.load();}catch(e){};
+    /[if lt IE 9] 
+      %script{:src=>"/javascripts/html5shiv.js"}
+
+
