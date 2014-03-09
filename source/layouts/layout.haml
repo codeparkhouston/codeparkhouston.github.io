@@ -11,27 +11,35 @@
     %title= page_title
     
     = stylesheet_link_tag "screen"
-    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Arvo"
-    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=PT+Sans"  
-  %body
+    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Amatic+SC:400,700"
+  %body.sky
     /[if lt IE 7] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+
+    .park
+      .cloud.x1
+      .cloud.x2
+      .cloud.x3
+      .cloud.x4
+      .cloud.x5
+      .cloud.x6
+
     .page-wrapper
 
       = yield
       
-      .footer.full-width-features{:name=>"contact"}
+      .footer{:name=>"contact"}
         .container
           .row
-            .span12
+            .col-xs-12
               %h2 We're based out of Houston, TX.
-            .icons
-              %a{:href=>"https://twitter.com/codeparkhouston"}
-                %img{:src=>"/images/Twitter.png", :alt=>"twitter"}
-              %a{:href=>"mailto:codeparkhouston@gmail.com"}
-                %img{:src=>"/images/email.png", :alt=>"email"}
-        .container
-          .copyright
-            %p Created in haste by Code Park.
+              / .icons
+              /   %a{:href=>"https://twitter.com/codeparkhouston"}
+              /     %img{:src=>"/images/Twitter.png", :alt=>"twitter"}
+              /   %a{:href=>"mailto:codeparkhouston@gmail.com"}
+              /     %span{:src=>"/images/email.png", :alt=>"email"}
+          .row
+            .copyright.col-xs-12
+              %p &copy Code Park Houston 2014
 
     = javascript_include_tag  "all", "dev"
     :javascript

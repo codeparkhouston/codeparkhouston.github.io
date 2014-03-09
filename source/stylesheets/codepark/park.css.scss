@@ -1,0 +1,160 @@
+.footer{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  position: relative;
+  color: #B8E986;
+
+  &:before{
+    content: '';
+    background: #417505;
+    border-radius: 100%;
+
+    // -webkit-transform: rotate(90deg);
+    // transform: rotate(90deg);
+    // -moz-transform: rotate(90deg);
+
+    height: 500px;
+    width: 120%;
+    position: absolute;
+    top: 0;
+    left: -10%;
+    z-index: -1;
+  }
+}
+
+
+// animated clouds inspired from http://thecodeplayer.com/walkthrough/pure-css3-animated-clouds-background
+.sky{
+  // background: rgba(201, 219, 233, 1);
+  @include gradient-vertical(rgba(201, 219, 233, 1), rgba(201, 219, 233, 0.25), 0%, 100%);
+  position: relative;
+}
+.park{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.cloud {
+  width: 200px; height: 60px;
+  background: #fff;
+  
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  
+  position: relative;
+
+  &:before, &:after{
+    content: '';
+    position: absolute; 
+    background: #fff;
+    width: 100px; height: 80px;
+    position: absolute; top: -15px; left: 10px;
+
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+  }
+  &:after{
+    width: 120px; height: 120px;
+    top: -55px; left: auto; right: 15px;
+  }
+}
+
+/*Time to animate*/
+.x1 {
+  -webkit-animation: moveclouds 150s linear infinite;
+  -moz-animation: moveclouds 150s linear infinite;
+  -o-animation: moveclouds 150s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+  left: 200px;
+
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6; /*opacity proportional to the size*/
+
+  /*Speed will also be proportional to the size and opacity*/
+  /*More the speed. Less the time in 's' = seconds*/
+  -webkit-animation: moveclouds 250s linear infinite;
+  -moz-animation: moveclouds 250s linear infinite;
+  -o-animation: moveclouds 250s linear infinite;
+
+
+}
+
+.x3 {
+  left: -250px; top: 100px;
+
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8; /*opacity proportional to the size*/
+
+  -webkit-animation: moveclouds 50s linear infinite;
+  -moz-animation: moveclouds 50s linear infinite;
+  -o-animation: moveclouds 50s linear infinite;
+}
+
+.x4 {
+  left: 470px; top: 150px;
+
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75; /*opacity proportional to the size*/
+
+  -webkit-animation: moveclouds 180s linear infinite;
+  -moz-animation: moveclouds 180s linear infinite;
+  -o-animation: moveclouds 180s linear infinite;
+}
+
+.x5 {
+  left: -150px; top: -50px;
+
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8; /*opacity proportional to the size*/
+
+  -webkit-animation: moveclouds 100s linear infinite;
+  -moz-animation: moveclouds 100s linear infinite;
+  -o-animation: moveclouds 100s linear infinite;
+}
+
+.x6 {
+  left: -150px; top: -10px;
+
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6; /*opacity proportional to the size*/
+
+  -webkit-animation: moveclouds 200s linear infinite;
+  -moz-animation: moveclouds 200s linear infinite;
+  -o-animation: moveclouds 200s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+  0% {margin-left: 1200px;}
+  100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+  0% {margin-left: 1200px;}
+  100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+  0% {margin-left: 1200px;}
+  100% {margin-left: -1000px;}
+}
+

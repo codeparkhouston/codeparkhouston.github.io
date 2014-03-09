@@ -7,7 +7,16 @@
 // @import "application";
 // @import "codepark-basic";
 
+$font-family-sans-serif:  "Lato", "Helvetica Neue", Helvetica, sans-serif !default;
+$font-family-serif:       "Josefin Slab", Georgia, serif !default;
+$font-size-base:          15px !default;
+$headings-line-height:    1.5 !default;
 
-@import "codepark/bootstrap";
-@import "codepark/bootstrap-responsive";
+
+$headings-park-font-family: 	  "Amatic SC", cursive;
+
+
+@import "_vendor/bootstrap";
+// @import "codepark/bootstrap-responsive";
+@import "codepark/park";
 @import "codepark/style";
