@@ -1,7 +1,7 @@
 /*
  * INTERFAZ - Responsive One Page Theme
  *
- * Copyright 2013 
+ * Copyright 2013
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  * URL: http://www.basicoh.com
@@ -145,7 +145,7 @@ body a:hover{
 	padding:10px 10px;
 	display:block;
 	font-size:13px;
-	
+
 }
 .top-nav .nav li a:hover{
 	background:#a4c956;
@@ -496,7 +496,7 @@ textarea, input { outline: none; }
 .pricing-column {
 	list-style:none;
 	position:relative;
-	
+
 	-webkit-transition:0.3s;
 	-moz-transition:0.3s;
 	transition:0.3s;
@@ -748,7 +748,7 @@ textarea, input { outline: none; }
 		width:940px;
 	}
 
-} 
+}
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
@@ -789,10 +789,10 @@ textarea, input { outline: none; }
 		width:724px;
 	}
 }
- 
+
 
 /* Landscape phones and down */
-@media (max-width: 766px) { 
+@media (max-width: 766px) {
 	body{
 		padding:0px!important;
 		margin:0px;
@@ -869,7 +869,7 @@ textarea, input { outline: none; }
 		text-align:center;
 		margin-left:-60px;
 	}
-		
+
 	.header-main label.error, .header-main-phone label-error{
 		display:none!important;
 	}
