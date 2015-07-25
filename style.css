@@ -1,0 +1,115 @@
+#navbar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 76px;
+	width: 100%;
+	z-index: 1;
+	border-botto: 1px solid lightgrey;
+	background-color: limegreen;
+
+}
+
+#navbar img {
+	position: absolute;
+	top: 4px;
+	left: 10px;
+	height: 68px;
+	width: 48px;
+}
+
+#navbar h1 {
+	position: relative;
+	top: 12px;
+	left: 64px;
+	margin: 0px;	
+	font-size: 44px;
+	color: white;
+
+}
+
+#navbar ul {
+	position: absolute;
+	top: 13px;
+	right: 0px;
+}
+
+#navbar li {
+	display: inline;
+	margin-left: -4px;
+}
+
+#navbar a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 29.5px;
+	border-left: 1px solid ghostwhite;
+}
+
+#navbar a:hover {
+	background-color: ghostwhite;
+	color: limegreen;
+}
+
+p {
+	font-size: 20px;
+	text-indent: 20px;
+}
+
+.section {
+	position: relative;
+	top: 90px;
+	width: 60%;
+	margin: auto;
+	padding: 2px 20px 10px 20px;
+	margin-bottom:30px;
+	background-color: #D6EBFF;
+}
+
+.section h1 {
+	text-align: center;
+	font-size: 40px;
+}
+
+.intro img {
+	float: right;
+}
+
+.student {
+	background-color: #F5F5F8;
+	height: 120px;
+	margin-top: 20px;
+	border-radius: .25em;
+}
+
+.longquote {
+	height: 230px;
+}
+
+.student img {
+	height: 120px;
+	width: 120px;
+	float: left;
+	border-radius: 50%;
+}
+
+.student h3 {
+	margin: 0px 10px 4px 130px;
+	padding-top: 10px
+}
+
+.student p {
+	margin: 0px 10px 0px 130px;
+}
+
+#footer {
+	background-color: limegreen;
+	text-align: center;
+	margin-top: 140px;
+	height: 40px;
+}
+
+#footer p {
+	margin: 0px
+}
