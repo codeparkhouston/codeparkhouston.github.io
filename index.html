@@ -1,8 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<title>Code Park | Code Park Houston</title>
 		<link type="text/css" rel="stylesheet" href="style.css"/>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+    		$("#1").click(function(){
+        	$(".intro").show();
+        	$(".second").hide();
+        	$(".third").hide();
+        	$(".fourth").hide();
+    		});
+    		$("#2").click(function(){
+        	$(".intro").hide();
+        	$(".second").show();
+        	$(".third").hide();
+        	$(".fourth").hide();
+    		});
+    		$("#3").click(function(){
+        	$(".intro").hide();
+        	$(".second").hide();
+        	$(".third").show();
+        	$(".fourth").hide();
+    		});
+    		$("#4").click(function(){
+        	$(".intro").hide();
+        	$(".second").hide();
+        	$(".third").hide();
+        	$(".fourth").show();
+    		});
+		});
+		</script>
 	</head>
 
 	<body>
@@ -10,10 +42,10 @@
 			<img src="http://codeparkhouston.com/images/codepark.png">
 			<h1>Code Park</h1>
 			<ul>
-				<li><a href="#">Who We Are</a></li>
-				<li><a href="#">Testimonials</a></li>
-				<li><a href="#">How You Can Help</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#" id="1">Who We Are</a></li>
+				<li><a href="#" id="2">Testimonials</a></li>
+				<li><a href="#" id="3">How You Can Help</a></li>
+				<li><a href="#" id="4">Contact</a></li>
 			</ul>
 		</div>
 
@@ -23,31 +55,31 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis quam pellentesque, pretium leo eget, dictum lacus. Nulla ullamcorper massa sapien, at suscipit nulla molestie quis. Sed gravida nisl vitae magna ultricies consequat. Praesent tempor eros id arcu blandit consequat. Etiam ac ligula nibh. Phasellus venenatis odio velit, eu tristique massa cursus quis. Nunc congue sit amet odio at auctor. In semper turpis sed pellentesque ornare. Integer fringilla, libero vitae facilisis laoreet, orci felis suscipit mauris, ac luctus massa ipsum eget tortor. Morbi egestas pulvinar nisi ac euismod. Ut porttitor lacus in nisi ornare consectetur. Mauris et mollis mi. Quisque placerat in nunc eget maximus.</p>
 		</div>
 
-		<div class="section">
+		<div class="section second">
 			<h1>What Our Students Had to Say</h1>
 			<div class="student">
 				<img src="avatar.png" />
 				<h3>Aaron O.</h3>
-				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis quam pellentesque, pretium leo eget, dictum lacus. Nulla ullamcorper massa sapien, at suscipit nulla molestie quis. Sed gravida nisl vitae magna ultricies consequat."</p>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis quam pellentesque, pretium leo eget, dictum lacus. Nulla ullamcorper massa sapien, at suscipit nulla molestie quis."</p>
 			</div>
 			<div class="student">
 				<img src="avatar.png" />
 				<h3>Aaron O.</h3>
-				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis quam pellentesque, pretium leo eget, dictum lacus. Nulla ullamcorper massa sapien, at suscipit nulla molestie quis. Sed gravida nisl vitae magna ultricies consequat."</p>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis quam pellentesque, pretium leo eget, dictum lacus. Nulla ullamcorper massa sapien, at suscipit nulla molestie quis."</p>
 			</div>
 			<div class="student longquote">
 				<img src="avatar.png" />
 				<h3>Aaron O.</h3>
-				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis quam pellentesque, pretium leo eget, dictum lacus. Nulla ullamcorper massa sapien, at suscipit nulla molestie quis. Sed gravida nisl vitae magna ultricies consequat.  Praesent tempor eros id arcu blandit consequat. Etiam ac ligula nibh. Phasellus venenatis odio velit, eu tristique massa cursus quis. Nunc congue sit amet odio at auctor. In semper turpis sed pellentesque ornare. Integer fringilla, libero vitae facilisis laoreet, orci felis suscipit mauris, ac luctus massa ipsum eget tortor. Morbi egestas pulvinar nisi ac euismod."</p>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis quam pellentesque, pretium leo eget, dictum lacus. Nulla ullamcorper massa sapien, at suscipit nulla molestie quis. Sed gravida nisl vitae magna ultricies consequat.  Praesent tempor eros id arcu blandit consequat. Etiam ac ligula nibh. Phasellus venenatis odio velit, eu tristique massa cursus quis. Nunc congue sit amet odio at auctor. In semper turpis sed pellentesque ornare."</p>
 			</div>
 		</div>
 
-		<div class="section">
+		<div class="section third">
 			<h1>How You Can Help</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis quam pellentesque, pretium leo eget, dictum lacus. Nulla ullamcorper massa sapien, at suscipit nulla molestie quis. Sed gravida nisl vitae magna ultricies consequat. Praesent tempor eros id arcu blandit consequat. Etiam ac ligula nibh. Phasellus venenatis odio velit, eu tristique massa cursus quis. Nunc congue sit amet odio at auctor. In semper turpis sed pellentesque ornare. Integer fringilla, libero vitae facilisis laoreet, orci felis suscipit mauris, ac luctus massa ipsum eget tortor. Morbi egestas pulvinar nisi ac euismod. Ut porttitor lacus in nisi ornare consectetur. Mauris et mollis mi. Quisque placerat in nunc eget maximus.</p>
 		</div>
 
-		<div class="section">
+		<div class="section lastsection fourth">
 			<h1>Contact</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis quam pellentesque, pretium leo eget, dictum lacus. Nulla ullamcorper massa sapien, at suscipit nulla molestie quis. Sed gravida nisl vitae magna ultricies consequat.</p>
 
@@ -68,5 +100,7 @@
 		<div id="footer">
 			<p>© Code Park Houston 2015</p>
 		</div>
+
+		<img src="http://codeparkhouston.com/images/codepark.png" id="logo"/>
 	</body>
 </html>

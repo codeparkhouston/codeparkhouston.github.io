@@ -5,8 +5,7 @@
 	height: 76px;
 	width: 100%;
 	z-index: 1;
-	border-botto: 1px solid lightgrey;
-	background-color: limegreen;
+	background-color: #30C530;
 
 }
 
@@ -25,12 +24,12 @@
 	margin: 0px;	
 	font-size: 44px;
 	color: white;
-
+	font-family: 'Merriweather', serif;
 }
 
 #navbar ul {
 	position: absolute;
-	top: 13px;
+	top: 12px;
 	right: 0px;
 }
 
@@ -43,8 +42,9 @@
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
-	padding: 29.5px;
+	padding: 28px;
 	border-left: 1px solid ghostwhite;
+	font-family: 'Merriweather', serif;
 }
 
 #navbar a:hover {
@@ -55,6 +55,7 @@
 p {
 	font-size: 20px;
 	text-indent: 20px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .section {
@@ -64,20 +65,22 @@ p {
 	margin: auto;
 	padding: 2px 20px 10px 20px;
 	margin-bottom:30px;
-	background-color: #D6EBFF;
+	background-color: #EBCC9D;
 }
 
 .section h1 {
 	text-align: center;
 	font-size: 40px;
+	font-family: 'Merriweather', serif;
 }
 
 .intro img {
 	float: right;
+	margin-left: 6px;
 }
 
 .student {
-	background-color: #F5F5F8;
+	background-color: #F7EBD8;
 	height: 120px;
 	margin-top: 20px;
 	border-radius: .25em;
@@ -92,24 +95,50 @@ p {
 	width: 120px;
 	float: left;
 	border-radius: 50%;
+	margin-right: 10px
 }
 
 .student h3 {
-	margin: 0px 10px 4px 130px;
-	padding-top: 10px
+	padding-top: 10px;
+	margin-bottom: 4px;
 }
 
 .student p {
-	margin: 0px 10px 0px 130px;
+	margin-top: 0px;
+	margin-left: 10px;
 }
 
 #footer {
-	background-color: limegreen;
+	background-color: #30C530;
 	text-align: center;
-	margin-top: 140px;
 	height: 40px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	margin-left: -8px;
+}
+
+.lastsection {
+	margin-bottom: 74px;
+}
+
+#footer {
+	padding-top: 10px;
 }
 
 #footer p {
 	margin: 0px
+}
+
+.second, .third, .fourth {
+	display: none;
+}
+.second {
+	margin-bottom: 70px;
+}
+
+#logo {
+	position: fixed;
+	bottom: 26px;
+	right: 40px;
 }
