@@ -1,77 +1,45 @@
-#navbar {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	height: 76px;
+.jumbotron img {
 	width: 100%;
+	height: 520px;
+}
+
+#jumbologo {
+	width: 92px;
+	height: 120px;
 	z-index: 1;
-	background-color: #30C530;
-
-}
-
-#navbar img {
 	position: absolute;
-	top: 4px;
-	left: 10px;
-	height: 68px;
-	width: 48px;
+	top: 20px;
+	left: 40px;
 }
 
-#navbar h1 {
-	position: relative;
-	top: 12px;
-	left: 64px;
-	margin: 0px;	
-	font-size: 44px;
-	color: white;
-	font-family: 'Merriweather', serif;
-}
-
-#navbar ul {
+.jumbotron h1 {
 	position: absolute;
-	top: 12px;
-	right: 0px;
-}
-
-#navbar li {
-	display: inline;
-	margin-left: -4px;
-}
-
-#navbar a {
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
-	padding: 28px;
-	border-left: 1px solid ghostwhite;
-	font-family: 'Merriweather', serif;
-}
-
-#navbar a:hover {
-	background-color: ghostwhite;
-	color: limegreen;
-}
-
-p {
-	font-size: 20px;
-	text-indent: 20px;
-	font-family: 'Open Sans', sans-serif;
+	top: -70px;
+	left: 130px;
+	font-size: 120px;
+	color: rgb(97, 143, 85);
 }
 
 .section {
 	position: relative;
-	top: 90px;
-	width: 60%;
+	top: 68px;
+	width: 65%;
+	padding: 1px 20px 2px 20px;
 	margin: auto;
-	padding: 2px 20px 10px 20px;
-	margin-bottom:30px;
-	background-color: #EBCC9D;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-indent: 20px;
+	line-height: 1.5em;
 }
 
 .section h1 {
-	text-align: center;
-	font-size: 40px;
 	font-family: 'Merriweather', serif;
+	font-size: 40px;
+	text-align: center;
+	color: rgb(95, 204, 95);
 }
 
 .intro img {
@@ -80,20 +48,21 @@ p {
 }
 
 .student {
-	background-color: #F7EBD8;
-	height: 120px;
-	margin-top: 20px;
+	margin-top: 26px;
+	margin-bottom: 15px;
+	height: 130px;
 	border-radius: .25em;
+	background-color: rgb(252, 252, 252);
 }
 
 .longquote {
-	height: 230px;
+	height: 200px;
 }
 
 .student img {
+	float: left;
 	height: 120px;
 	width: 120px;
-	float: left;
 	border-radius: 50%;
 	margin-right: 10px
 }
@@ -108,37 +77,70 @@ p {
 	margin-left: 10px;
 }
 
-#footer {
-	background-color: #30C530;
-	text-align: center;
-	height: 40px;
-	position: fixed;
-	bottom: 0px;
-	width: 100%;
-	margin-left: -8px;
+#logo {
+	position: absolute;
+	bottom: 26px;
+	right: 40px;
 }
 
-.lastsection {
-	margin-bottom: 74px;
+body {
+   margin:0;
+   padding:0;
+   height:100%;
 }
-
+#container {
+   min-height:100%;
+   position:relative;
+}
+#body {
+   padding-bottom: 48px;
+}
 #footer {
-	padding-top: 10px;
+   width:100%;
+   height:50px;
+   background: rgb(95, 204, 95);
 }
 
 #footer p {
-	margin: 0px
+	padding-top: 10px;
+	color: white;
 }
 
-.second, .third, .fourth {
-	display: none;
-}
-.second {
-	margin-bottom: 70px;
+.intro {
+	background-color: rgb(252, 252, 252);
+	width: 100%;
 }
 
-#logo {
-	position: fixed;
-	bottom: 26px;
+.intro p {
+	width: 65%;
+	padding-left: 250px;
+	padding-bottom: 10px;
+}
+
+.secondsection {
+	background-color: white;
+	padding-bottom: 35px;
+}
+
+.thirdsection {
+	width: 100%;
+	background-color: rgb(252, 252, 252);
+}
+
+#thirdsectionc {
+	background-color: white;
+}
+
+.thirdsection p {
+	width: 65%;
+	padding-left: 250px;
+	padding-bottom: 20px;
+}
+
+address {
+	position: absolute;
 	right: 40px;
+	bottom: 12px;
+	font-size: 20px;
+	color: white;
 }
