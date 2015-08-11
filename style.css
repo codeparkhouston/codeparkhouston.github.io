@@ -1,30 +1,35 @@
-.jumbotron img {
-	width: 100%;
-	height: 520px;
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
 }
 
-#jumbologo {
-	width: 92px;
-	height: 120px;
-	z-index: 1;
-	position: absolute;
-	top: 20px;
-	left: 40px;
-}
-
-.jumbotron h1 {
-	position: absolute;
-	top: -70px;
-	left: 130px;
-	font-size: 120px;
-	color: rgb(97, 143, 85);
+#container {
+	position: relative;
+	min-height: 100%;
 }
 
 .section {
 	position: relative;
-	top: 68px;
+	top: 0px;
+	width: 100%;
+	padding: 1px 0px 30px 0px;
+}
+
+.secondsection {
 	width: 65%;
-	padding: 1px 20px 2px 20px;
+	margin: auto;
+}
+
+.section h1 {
+	font-family: 'Merriweather', serif;
+	font-size: 40px;
+	text-align: center;
+	color: rgb(255, 168, 43);
+}
+
+.ss p {
+	width: 65%;
 	margin: auto;
 }
 
@@ -35,24 +40,12 @@ p {
 	line-height: 1.5em;
 }
 
-.section h1 {
-	font-family: 'Merriweather', serif;
-	font-size: 40px;
-	text-align: center;
-	color: rgb(95, 204, 95);
-}
-
-.intro img {
-	float: right;
-	margin-left: 6px;
-}
-
 .student {
 	margin-top: 26px;
 	margin-bottom: 15px;
 	height: 130px;
 	border-radius: .25em;
-	background-color: rgb(252, 252, 252);
+	background-color: rgb(250, 250, 255);
 }
 
 .longquote {
@@ -77,24 +70,6 @@ p {
 	margin-left: 10px;
 }
 
-#logo {
-	position: absolute;
-	bottom: 26px;
-	right: 40px;
-}
-
-body {
-   margin:0;
-   padding:0;
-   height:100%;
-}
-#container {
-   min-height:100%;
-   position:relative;
-}
-#body {
-   padding-bottom: 48px;
-}
 #footer {
    width:100%;
    height:50px;
@@ -106,41 +81,32 @@ body {
 	color: white;
 }
 
-.intro {
-	background-color: rgb(252, 252, 252);
-	width: 100%;
-}
-
-.intro p {
-	width: 65%;
-	padding-left: 250px;
-	padding-bottom: 10px;
-}
-
-.secondsection {
-	background-color: white;
-	padding-bottom: 35px;
-}
-
-.thirdsection {
-	width: 100%;
-	background-color: rgb(252, 252, 252);
-}
-
-#thirdsectionc {
-	background-color: white;
-}
-
-.thirdsection p {
-	width: 65%;
-	padding-left: 250px;
-	padding-bottom: 20px;
-}
-
 address {
 	position: absolute;
 	right: 40px;
 	bottom: 12px;
 	font-size: 20px;
 	color: white;
+}
+
+#logo {
+	position: absolute;
+	bottom: 26px;
+	right: 40px;
+}
+
+.intro {
+	background-color: rgb(250, 250, 255);
+}
+
+.secondsection {
+	background-color: white;
+}
+
+.thirdsection {
+	background-color: rgb(250, 250, 255);
+}
+
+.fourthsection {
+	background-color: white;
 }
