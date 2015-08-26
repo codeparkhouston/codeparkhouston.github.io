@@ -19,11 +19,7 @@ body {
 }
 
 .section:nth-child(odd){
-<<<<<<< HEAD
 	background-color: rgba(250, 250, 255, 0.5025);
-=======
-	background-color: rgb(250, 250, 255);
->>>>>>> f86cdf623e790765a0b42de0b535b8664a75e796
 }
 
 .section:nth-child(even){
@@ -31,11 +27,7 @@ body {
 }
 
 .intro.section {
-<<<<<<< HEAD
 	background-image: linear-gradient(rgba(95, 204, 95, 0.79), rgba(255,255, 255,.95) 90%, white), url(./banner.jpg);
-=======
-	background-image: linear-gradient(rgba(95, 204, 95, 0.79), rgba(255,255, 255,.85) 90%, white), url(./banner.jpg);
->>>>>>> f86cdf623e790765a0b42de0b535b8664a75e796
 	background-size: cover;
 	background-blend-mode: lighten;
 	background-position-y: bottom;
@@ -46,20 +38,9 @@ body {
 
 
 .section .brand {
-<<<<<<< HEAD
 	color: #608E53;
 	font-family: "Muli", Helvetica, sans-serif;
 	font-size: 3em;
-=======
-	color: #3c763d;
-	font-family: "Muli", Helvetica, sans-serif;
-	font-size: 3em;
-}
-
-.secondsection {
-	width: 65%;
-	margin: auto;
->>>>>>> f86cdf623e790765a0b42de0b535b8664a75e796
 }
 
 .section h1 {
@@ -81,11 +62,7 @@ h2 {
 
 p {
 	font-size: 20px;
-<<<<<<< HEAD
 	text-indent: 14px;
-=======
-	text-indent: 20px;
->>>>>>> f86cdf623e790765a0b42de0b535b8664a75e796
 	line-height: 1.8em;
 }
 
@@ -141,7 +118,6 @@ address {
 	bottom: 26px;
 	right: 40px;
 }
-<<<<<<< HEAD
 
 
 li {
@@ -156,5 +132,3 @@ li {
 #lastSection {
 	margin-bottom: -20px;
 }
-=======
->>>>>>> f86cdf623e790765a0b42de0b535b8664a75e796
