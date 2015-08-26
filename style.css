@@ -1,7 +1,9 @@
 body {
 	padding: 0;
-	margin: 0;
+	margin: 0px 0px -20px 0px;
 	height: 100%;
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #container {
@@ -16,9 +18,48 @@ body {
 	padding: 1px 0px 30px 0px;
 }
 
+.section:nth-child(odd){
+<<<<<<< HEAD
+	background-color: rgba(250, 250, 255, 0.5025);
+=======
+	background-color: rgb(250, 250, 255);
+>>>>>>> f86cdf623e790765a0b42de0b535b8664a75e796
+}
+
+.section:nth-child(even){
+	background-color: white;
+}
+
+.intro.section {
+<<<<<<< HEAD
+	background-image: linear-gradient(rgba(95, 204, 95, 0.79), rgba(255,255, 255,.95) 90%, white), url(./banner.jpg);
+=======
+	background-image: linear-gradient(rgba(95, 204, 95, 0.79), rgba(255,255, 255,.85) 90%, white), url(./banner.jpg);
+>>>>>>> f86cdf623e790765a0b42de0b535b8664a75e796
+	background-size: cover;
+	background-blend-mode: lighten;
+	background-position-y: bottom;
+	padding-top: 260px;
+	padding-bottom: 100px;
+	background-color: rgba(115, 164, 17, 0.79);
+}
+
+
+.section .brand {
+<<<<<<< HEAD
+	color: #608E53;
+	font-family: "Muli", Helvetica, sans-serif;
+	font-size: 3em;
+=======
+	color: #3c763d;
+	font-family: "Muli", Helvetica, sans-serif;
+	font-size: 3em;
+}
+
 .secondsection {
 	width: 65%;
 	margin: auto;
+>>>>>>> f86cdf623e790765a0b42de0b535b8664a75e796
 }
 
 .section h1 {
@@ -28,28 +69,33 @@ body {
 	color: rgb(255, 168, 43);
 }
 
-.ss p {
+h2 {
+	margin-bottom: -10px;
+
+}
+
+.potato {
 	width: 65%;
 	margin: auto;
 }
 
 p {
-	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
+<<<<<<< HEAD
+	text-indent: 14px;
+=======
 	text-indent: 20px;
-	line-height: 1.5em;
+>>>>>>> f86cdf623e790765a0b42de0b535b8664a75e796
+	line-height: 1.8em;
 }
 
 .student {
 	margin-top: 26px;
 	margin-bottom: 15px;
-	height: 130px;
 	border-radius: .25em;
-	background-color: rgb(250, 250, 255);
-}
-
-.longquote {
-	height: 200px;
+	background-color: white;
+	width: 65%;
+	margin: 0px auto 30px auto;
 }
 
 .student img {
@@ -57,23 +103,25 @@ p {
 	height: 120px;
 	width: 120px;
 	border-radius: 50%;
-	margin-right: 10px
+	margin: 6px 10px 0px 6px;
 }
 
 .student h3 {
 	padding-top: 10px;
+	margin-top: 0px;
 	margin-bottom: 4px;
 }
 
 .student p {
-	margin-top: 0px;
-	margin-left: 10px;
+	margin: 0px 0px 0px 16px ;
+	padding-bottom: 10px;
+
 }
 
 #footer {
    width:100%;
    height:50px;
-   background: rgb(95, 204, 95);
+   background: rgba(95, 204, 95, .92);
 }
 
 #footer p {
@@ -85,7 +133,6 @@ address {
 	position: absolute;
 	right: 40px;
 	bottom: 12px;
-	font-size: 20px;
 	color: white;
 }
 
@@ -94,19 +141,20 @@ address {
 	bottom: 26px;
 	right: 40px;
 }
+<<<<<<< HEAD
 
-.intro {
-	background-color: rgb(250, 250, 255);
+
+li {
+	margin-bottom: 10px;
 }
 
-.secondsection {
-	background-color: white;
+#noIndent p {
+	text-indent: 0px;
+	margin: 8px 0px 0px 0px;
 }
 
-.thirdsection {
-	background-color: rgb(250, 250, 255);
+#lastSection {
+	margin-bottom: -20px;
 }
-
-.fourthsection {
-	background-color: white;
-}
+=======
+>>>>>>> f86cdf623e790765a0b42de0b535b8664a75e796
