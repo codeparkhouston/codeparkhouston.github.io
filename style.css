@@ -4,10 +4,6 @@ body {
 	height: 100%;
 	color: #333;
 	font-family: 'Lato', sans-serif;
-	background-image: linear-gradient(rgba(95, 204, 95, .92), rgba(255,255, 255,.95) 80%, white), url(./banner.jpg);
-	background-size: cover;
-	background-position-y: bottom;
-	background-attachment: fixed;
 }
 
 #container {
@@ -32,31 +28,30 @@ body {
 }
 
 h2, strong {
-	color: rgba(255, 168, 43, 1);
+	color: rgba(95, 204, 95, 1);
 }
 
 .section:nth-child(even){
-	border: 1px solid rgba(95, 204, 95, .8);
+	border: 1px dotted rgba(95, 204, 95, .8);
 	border-left: 0;
 	border-right: 0;
-	background-color: rgba(95, 204, 95, .5);
-	/*color: #FFF;*/
-	/*text-shadow: 0 0 1px rgba(20, 20, 20, .4);*/
+/*	background-color: rgba(95, 204, 95, .8);
+	color: #FFF;
+	text-shadow: 0 0 1px rgba(20, 20, 20, .4);*/
 }
 
 .section:nth-child(odd){
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: white;
 }
 
 
 .intro.section {
-/*	background-image: linear-gradient(rgba(95, 204, 95, .92), rgba(255,255, 255,.95) 80%, white), url(./banner.jpg);
+	background-image: linear-gradient(rgba(95, 204, 95, .92), rgba(255,255, 255,.95) 80%, white), url(./banner.jpg);
 	background-size: cover;
-	background-position-y: bottom;*/
-	background-image: linear-gradient(rgba(95, 204, 95, .25), rgba(255,255, 255,.5) 80%, transparent);
+	background-position-y: bottom;
 	padding-top: 260px;
 	padding-bottom: 100px;
-	/*background-color: rgba(95, 204, 95, .92);*/
+	background-color: rgba(95, 204, 95, .92);
 }
 
 
