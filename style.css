@@ -5,7 +5,7 @@ body {
 	color: #333;
 	font-family: 'Lato', sans-serif;
 
-	background-image: linear-gradient(rgba(95, 204, 95, .92) 25%, rgba(95, 204, 95, .92) 100%), url(./banner.jpg);
+	background-image: linear-gradient(rgba(255, 255, 128, .9) 25%, rgba(255, 255, 128, .9) 100%), url(./banner.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-color: #fff;
@@ -60,7 +60,6 @@ h2, strong {
 	font-size: 3em;
 	margin-top: 0;
 	color: rgba(95, 204, 95, 1);
-	text-shadow: 0 0 15px rgba(255, 255, 255, 1);
 }
 
 .section .brand::before {
