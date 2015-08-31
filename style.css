@@ -4,6 +4,7 @@ body {
 	height: 100%;
 	color: #333;
 	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 
 	background-image: linear-gradient(rgba(255, 255, 128, .9) 25%, rgba(255, 255, 128, .9) 100%), url(./banner.jpg);
 	background-size: cover;
@@ -26,9 +27,6 @@ body {
 	background-color: #FEF;
 }
 
-.quote {
-	padding: 10px 0;
-}
 .quote strong {
 	font-size: 1.5em;
 	display: inline-block;
