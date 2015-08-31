@@ -4,6 +4,13 @@ body {
 	height: 100%;
 	color: #333;
 	font-family: 'Lato', sans-serif;
+
+	background-image: linear-gradient(rgba(95, 204, 95, .92) 25%, rgba(95, 204, 95, .92) 100%), url(./banner.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position-y: -50px;
 }
 
 #container {
@@ -16,6 +23,7 @@ body {
 	top: 0px;
 	width: 100%;
 	padding: 80px 0;
+	background-color: #FEF;
 }
 
 .quote {
@@ -31,27 +39,19 @@ h2, strong {
 	color: rgba(95, 204, 95, 1);
 }
 
-.section:nth-child(even){
-	border: 1px dotted rgba(95, 204, 95, .8);
-	border-left: 0;
-	border-right: 0;
-/*	background-color: rgba(95, 204, 95, .8);
-	color: #FFF;
-	text-shadow: 0 0 1px rgba(20, 20, 20, .4);*/
+.section {
+	border-bottom: 1px solid rgba(95, 204, 95, .8);
 }
-
-.section:nth-child(odd){
-	background-color: white;
-}
-
 
 .intro.section {
-	background-image: linear-gradient(rgba(95, 204, 95, .92), rgba(255,255, 255,.95) 80%, white), url(./banner.jpg);
-	background-size: cover;
-	background-position-y: bottom;
+	background-image: linear-gradient(transparent, rgba(255, 255, 255, .95) 95%);
 	padding-top: 260px;
 	padding-bottom: 100px;
-	background-color: rgba(95, 204, 95, .92);
+	background-color: transparent;
+}
+
+.intro p:last-child {
+	margin-top: 2em;
 }
 
 
@@ -74,10 +74,7 @@ h2, strong {
 }
 
 .section h1 {
-/*	font-family: 'Merriweather', serif;
-	font-size: 40px;*/
 	text-align: center;
-	/*color: rgb(255, 168, 43);*/
 }
 
 .potato {
@@ -133,7 +130,7 @@ p {
 #footer {
 	width: 100%;
 	padding: 20px 17.5%;
-	background: rgba(95, 204, 95, .8);
+	background: #7ed67e;
 	box-sizing: border-box;
 }
 
