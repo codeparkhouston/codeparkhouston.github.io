@@ -1,0 +1,49 @@
+.section.css-slideshow {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 260px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.css-slideshow .student {
+  position: absolute;
+  width: 65%;
+}
+.student:nth-child(1) {
+  animation: xfade 18s 0s infinite;
+}
+.student:nth-child(2) {
+  animation: xfade 18s 6s infinite;
+  opacity: 1;
+  margin-left: -117.5%;
+}
+.student:nth-child(3) {
+  animation: xfade 18s 12s infinite;
+  opacity: 1;
+  margin-left: -117.5%;
+}
+
+@keyframes xfade{
+  0%{
+    opacity: 1;
+    margin-left: 17.5%;
+  }
+  30% {
+    opacity: 1;
+    margin-left: 17.5%;
+  }
+  33.3%{
+    opacity: 0;
+    margin-left: 117.5%;
+  }
+  97.6% {
+    opacity: 0;
+    margin-left: -117.5%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 17.5%;
+  }
+}
