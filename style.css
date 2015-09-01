@@ -17,6 +17,12 @@ body {
 	background-repeat: no-repeat;
 }
 
+p {
+	font-size: 20px;
+	line-height: 1.8em;
+	margin: .45em 0;
+}
+
 #container {
 	position: relative;
 	min-height: 100%;
@@ -30,39 +36,18 @@ body {
 	background-color: #FFF;
 }
 
-.divider strong {
-	font-size: 1.5em;
-	display: inline;
-	margin: 0 4px;
-}
-
-h2, strong, .quoter {
-	color: rgba(95, 204, 95, 1);
-}
-
-.quoter {
-	text-align: right;
-	font-style: italic;
-	font-weight: 600;
-}
-
-.quoter::before {
-	content: '- ';
-	font-weight: 300;
-}
-
 .section:not(:last-child) {
-	margin-bottom: 60px;
+	margin-bottom: 80px;
 }
 
 .intro.section {
-	background-image: linear-gradient(transparent, rgba(255, 255, 255, 1) 100%);
+	background-image: linear-gradient(transparent, rgba(255, 255, 255, .7) 50%, rgba(255, 255, 255, 1) 100%);
 	padding-top: 260px;
 	padding-bottom: 100px;
 	background-color: transparent;
 }
 
-.intro p:last-child {
+.section p + p:not(.quoter):not(.quote) {
 	margin-top: 2em;
 }
 
@@ -92,10 +77,27 @@ h2, strong, .quoter {
 	text-align: center;
 }
 
-p {
-	font-size: 20px;
-	line-height: 1.8em;
-	margin: .45em 0;
+
+small strong {
+	font-size: 1.5em;
+	display: inline;
+	margin: 0 4px;
+}
+
+h2, strong, .quoter {
+	color: rgba(95, 204, 95, 1);
+}
+
+.quoter {
+	text-align: right;
+	font-style: italic;
+	font-weight: 600;
+	margin-bottom: -36px;
+}
+
+.quoter::before {
+	content: '- ';
+	font-weight: 300;
 }
 
 .student img {
