@@ -11,12 +11,12 @@ body {
 	font-weight: 300;
 	font-size: 20px;
 
-	background-image: linear-gradient(rgba(255, 255, 128, .9) 25%, rgba(255, 255, 128, .9) 100%), url(./banner.jpg);
+	background-image: linear-gradient(rgba(255, 255, 150, .9) 25%, rgba(255, 255, 150, .9) 100%), url(./banner.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-color: #FFF;
 	background-repeat: no-repeat;
-	background-position: center 60px;
+	background-position: center top;
 }
 
 p {
@@ -34,6 +34,7 @@ a {
 }
 
 #header {
+	display: none;
 	position: fixed;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 1);
@@ -43,10 +44,11 @@ a {
 }
 
 #header ul {
+	padding: 0;
 	position: relative;
-	margin: 10px 17.5%;
-	width: 65%;
-	text-align: right;
+	margin: 10px auto;
+	width: 90%;
+	text-align: center;
 	list-style: none;
 }
 
@@ -74,13 +76,11 @@ a {
 }
 
 .section:not(:last-child) {
-	margin-bottom: 80px;
+	margin-bottom: 50px;
 }
 
 .intro.section {
 	background-image: linear-gradient(transparent, rgba(255, 255, 255, .7) 50%, rgba(255, 255, 255, 1) 100%);
-	padding-top: 260px;
-	padding-bottom: 100px;
 	background-color: transparent;
 }
 
@@ -89,9 +89,9 @@ a {
 }
 
 .brand {
-	font-family: "Muli", Helvetica, sans-serif;
 	margin-top: 0;
 	color: rgba(95, 204, 95, 1);
+	font-family: "Muli", Helvetica, sans-serif;
 	text-transform: lowercase;
 }
 
@@ -114,7 +114,7 @@ a.brand:hover::before, a.brand:hover::after, a.brand.active::before, a.brand.act
 }
 
 .potato {
-	width: 65%;
+	width: 90%;
 	margin: auto;
 }
 
@@ -122,9 +122,16 @@ a.brand:hover::before, a.brand:hover::after, a.brand.active::before, a.brand.act
 	text-align: center;
 }
 
+.quote {
+	font-style: italic;
+}
 
-small strong {
-	font-size: 1.5em;
+.quote::before, .quote::after {
+	content: '"';
+}
+
+.quote strong {
+	font-size: 1.1em;
 	display: inline;
 	margin: 0 4px;
 }
@@ -146,6 +153,7 @@ h2, h3, strong, .quoter {
 }
 
 .student img {
+	display: none;
 	height: 120px;
 	width: 120px;
 	border-radius: 50%;
@@ -153,28 +161,30 @@ h2, h3, strong, .quoter {
 	float: left;
 }
 
-.student h3 {
-	padding-top: 10px;
-	margin-top: 0px;
-	margin-bottom: 4px;
-}
-
 .student p.quote {
 	margin: 0;
 	padding-bottom: 10px;
-	width: calc(100% - 150px);
+	width: 100%;
 	float: left;
 }
 
 #footer {
 	width: 100%;
 	padding: 20px 17.5%;
-	background: transparent;
+	background: rgba(95, 204, 95, 0.5);
 	box-sizing: border-box;
 }
 
 #footer > p, #footer > address {
 	display: inline-block;
+}
+
+#footer a {
+	color: rgba(96,142,83, 1);
+}
+
+#footer a:hover {
+	color: rgba(255, 255, 255, 1);
 }
 
 address {
@@ -192,14 +202,111 @@ li {
 	margin-bottom: 10px;
 }
 
-.you {
-	margin: 40px 0 80px 0;
+.actions {
+	list-style: none;
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 50px 0 0 0;
 }
 
-.you:last-child {
-	margin: 40px 0 0 0;
+.actions li {
+	display: inline-block;
+	width: 100%;
 }
 
-.you h3 {
-	margin-bottom: 0;
+.actions li a {
+	display: block;
+	width: 65%;
+	padding: 10px;
+	margin: 0 auto;
+	border: 4px solid rgba(95, 204, 95, 0.5);
+	box-sizing: border-box;
+	text-align: center;
+
+	color: rgba(96,142,83, 1);
+	font-family: "Muli", Helvetica, sans-serif;
+	text-transform: lowercase;
+
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.actions li a:hover {
+	background-color: rgba(95, 204, 95, 0.5);
+	color: #333;
+}
+
+
+@media (min-width: 530px) {
+
+	#header {
+		display: block;
+	}
+
+	body {
+		background-position: center 60px;
+	}
+
+	.intro.section {
+    padding-top: 260px;
+	}
+
+	.student img {
+		display: block;
+	}
+
+	.student p.quote {
+		width: calc(100% - 150px);
+	}
+
+}
+
+@media (min-width: 650px) {
+
+	#header ul {
+		text-align: right;
+	}
+
+}
+
+@media (min-width: 854px) {
+
+	.actions li {
+		width: 33%;
+	}
+
+	.actions li a {
+		width: 90%;
+	}
+
+}
+
+@media (min-width: 964px) {
+
+  .potato, .css-slideshow .student, #header ul {
+    width: 80%;
+  }
+  .css-slideshow .student {
+  	margin: 0 10%;
+  }
+
+	#header ul {
+		width: 80%;
+	}
+
+}
+
+@media (min-width: 1182px) {
+
+  .potato, .css-slideshow .student, #header ul {
+    width: 70%;
+  }
+  .css-slideshow .student {
+  	margin: 0 15%;
+  }
+
+	#header ul {
+		width: 70%;
+	}
+
 }
