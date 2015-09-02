@@ -225,6 +225,10 @@ li {
 	width: 100%;
 }
 
+.actions li p {
+	margin-top: 0;
+}
+
 .actions li a {
 	display: block;
 	width: 65%;
