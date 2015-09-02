@@ -25,7 +25,16 @@ p {
 }
 
 a {
+	color: rgba(95, 204, 95, 1);
 	text-decoration: none;
+}
+
+a:hover {
+	color: rgba(96,142,83, 1);
+}
+
+a:focus {
+	outline: 1px dotted rgba(95, 204, 95, 1);
 }
 
 #container {
@@ -231,7 +240,7 @@ li {
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.actions li a:hover {
+.actions li a:hover, .actions li a:focus {
 	background-color: rgba(95, 204, 95, 0.5);
 	color: #333;
 }
