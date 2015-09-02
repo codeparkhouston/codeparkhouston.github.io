@@ -25,7 +25,13 @@ p {
 }
 
 a {
+	color: rgba(95, 204, 95, 1);
 	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: rgba(96,142,83, 1);
+	outline: none;
 }
 
 #container {
@@ -97,20 +103,24 @@ a {
 
 .brand::before {
 	content: '{ ';
-	color: rgba(96,142,83, 1);
+	color: rgba(96, 142, 83, 1);
 }
 
 .brand::after {
 	content: ' }';
-	color: rgba(96,142,83, 1);
+	color: rgba(96, 142, 83, 1);
 }
 
 a.brand::before, a.brand::after {
 	color: transparent;
 }
 
-a.brand:hover::before, a.brand:hover::after, a.brand.active::before, a.brand.active::after {
-	color: rgba(96,142,83, 1);
+a.brand:hover::before, a.brand:hover::after, a.brand:focus::before, a.brand:focus::after, a.brand.active::before, a.brand.active::after {
+	color: rgba(96, 142, 83, 1);
+}
+
+a.brand:hover, a.brand:focus, a.brand.active {
+	color: rgba(95, 204, 95, 1);
 }
 
 .potato {
@@ -183,7 +193,7 @@ h2, h3, strong, .quoter {
 	color: rgba(96,142,83, 1);
 }
 
-#footer a:hover {
+#footer a:hover, #footer a:focus {
 	color: rgba(255, 255, 255, 1);
 }
 
@@ -231,7 +241,7 @@ li {
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.actions li a:hover {
+.actions li a:hover, .actions li a:focus {
 	background-color: rgba(95, 204, 95, 0.5);
 	color: #333;
 }
