@@ -197,6 +197,7 @@ function handleTopics(menuElement){
       topics[newTopic].menuItem.classList.add('active');
 
       if(typeof topics[oldTopic] != 'undefined'){
+        topics[oldTopic].menuItem.blur();
         topics[oldTopic].menuItem.classList.remove('active');
       }
     }
