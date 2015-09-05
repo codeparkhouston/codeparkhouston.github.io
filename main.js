@@ -74,6 +74,7 @@ function handleForms(actionsElement){
 
     actionContainer.classList.add('closed');
     pastActionElement.classList.remove('active');
+    pastActionElement.blur();
 
     submitButton[0].removeEventListener('click', _.partial(submitForm, action));
   }
