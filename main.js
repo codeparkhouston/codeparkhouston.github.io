@@ -2,9 +2,27 @@
 
 var menuElement = document.getElementById('header');
 var actionsElement = document.getElementById('actions');
+var textareas = document.getElementsByTagName('textarea');
 
 handleTopics(menuElement);
 handleForms(actionsElement);
+handleTextareas(textareas);
+
+function handleTextareas(textareas){
+  Array.prototype.forEach.call(textareas, handleTextarea);
+
+  function handleTextarea(textarea){
+    textarea.addEventListener('keyup', autoResize);
+  }
+
+  function autoResize(keyEvent){
+    var textareaHeight = this.getBoundingClientRect();
+    if(this.scrollHeight > textareaHeight.height){
+      this.style.height = '';
+      this.style.height = this.scrollHeight + 20 + 'px';      
+    }
+  }
+}
 
 
 function handleForms(actionsElement){
@@ -56,7 +74,6 @@ function handleForms(actionsElement){
 
     actionContainer.classList.add('closed');
     pastActionElement.classList.remove('active');
-
 
     submitButton[0].removeEventListener('click', _.partial(submitForm, action));
   }
