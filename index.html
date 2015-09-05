@@ -3,8 +3,9 @@
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic,400italic,700,700italic,900,900italic,100italic' rel='stylesheet' type='text/css'>
-		<link type="text/css" rel="stylesheet" href="student-slides.css"/>
-		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href="./normalize.css">
+		<link type="text/css" rel="stylesheet" href="./student-slides.css"/>
+		<link type="text/css" rel="stylesheet" href="./style.css"/>
 		<title>Code Park | Code Park Houston</title>
 	</head>
 
@@ -76,32 +77,145 @@
 
 					<p>Open doors for our students, or mentor them one on one in our classrooms. You'll be a part of their success stories. We'd love to hear from you!</p>
 
-					<ul class="actions">
+					<ul class="actions" id="actions">
 						<li>
-							<a href="#">Submit a Project</a>
+							<a href="#project">Submit a Project</a>
 							<p><small>for <i>Spring 2016</i></small></p>
 						</li>
 						<li>
-							<a href="#">Hire an Intern</a>
+							<a href="#intern">Hire an Intern</a>
 							<p><small>for <i>Summer 2016</i></small></p>
 						</li>
 						<li>
-							<a href="#">Volunteer to Teach</a>
+							<a href="#volunteer">Volunteer to Teach</a>
 							<p><small>for <i>Fall 2015</i></small></p>
 						</li>
 					</ul>
 				</div>
 
+				<div class="potato action-viewer">
+
+
+
+				<!-- project form -->
+					<div class="closed" id="project">
+						<h2>
+							Submit a project!
+						</h2>
+						<p>
+							Projects for students to complete in Spring 2016 by May 31st.
+						</p>
+						<ul class="requirements">
+							<li>Being in the classroom Monday &amp; Thursday, 3:45 - 5:45 pm</li>
+						</ul>
+						<form>
+							<div class="form-group">
+								<label>Name</label>
+								<input type="text" name="name">
+							</div>
+							<div class="form-group">
+								<label>Email</label>
+								<input type="email" name="email">
+							</div>
+							<div class="form-group">
+								<label>Company</label>
+								<input type="text" name="company">
+							</div>
+							<div class="form-group">
+								<label>Brief project description</label>
+								<textarea name="comments"></textarea>
+							</div>
+							<div class="form-group">
+								<button>Let's do this!</button>
+							</div>
+						</form>
+						<div class="thank-you closed">
+							<h2>Thank you!  We'll be in touch with you shortly.</h2>
+						</div>
+					</div>
+
+
+				<!-- intern form -->
+					<div class="closed" id="intern">
+						<h2>
+							Submit a position for interns
+						</h2>
+						<form>
+							<div class="form-group">
+								<label>Name</label>
+								<input type="text" name="name">
+							</div>
+							<div class="form-group">
+								<label>Email</label>
+								<input type="email" name="email">
+							</div>
+							<div class="form-group">
+								<button>Let's do this!</button>
+							</div>
+						</form>
+						<div class="thank-you closed">
+							<h2>Thank you!  We'll be in touch with you shortly.</h2>
+						</div>
+					</div>
+
+
+					<!-- volunteer form -->
+					<div class="closed" id="volunteer">
+						<h2>
+							Mentor students on projects for a unit
+						</h2>
+						<p>
+							For about two weeks in Fall 2015, join us by:
+						</p>
+						<ul class="requirements">
+							<li>Being in the classroom Monday &amp; Thursday, 3:45 - 5:45 pm</li>
+							<li>Helping students with JavaScript</li>
+							<li>Providing tips and support with using Sublime</li>
+							<li>Commenting on code on GitHub outside of class times</li>
+							<li>Sharing your enthusiasm and patience for coding</li>
+						</ul>
+						<form>
+							<div class="form-group">
+								<label>Name</label>
+								<input type="text" name="name">
+							</div>
+							<div class="form-group">
+								<label>Email</label>
+								<input type="email" name="email">
+							</div>
+							<div class="form-group">
+								<label>Units</label>
+								<input type="text" name="units">
+							</div>
+							<div class="form-group">
+								<label>GitHub Username</label>
+								<input type="text" name="github">
+							</div>
+							<div class="form-group">
+								<label>Why would you like to volunteer?</label>
+								<textarea name="comments"></textarea>
+							</div>
+							<div class="form-group">
+								<button>Let's do this!</button>
+							</div>
+						</form>
+						<div class="thank-you closed">
+							<h2>Thank you!  We'll be in touch with you shortly.</h2>
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</div>
 
 		<div id="footer">
-			<p>&copy; Code Park Houston 2015</p>
-			<address>Talk to us! <a href="mailto:contact@codepark.org">contact@codepark.org</a></address>
+			<div class="potato">
+				<p class="copyright">&copy; Code Park Houston 2015</p>
+				<p class="contact-us">Talk to us! <a href="mailto:contact@codeparkhouston.com">contact@codeparkhouston.com</a></p>
+			</div>
 		</div>
 
-		<img src="http://codeparkhouston.com/images/codepark.png" id="logo"/>
+		<img src="./codepark.png" id="logo"/>
 	</div>
 	<script type="text/javascript" src="animated-scrollto.js"></script>
 	<script type="text/javascript" src="lodash.js"></script>

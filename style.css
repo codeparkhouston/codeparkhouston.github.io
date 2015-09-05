@@ -85,12 +85,16 @@ a:hover, a:focus {
 	margin-bottom: 50px;
 }
 
+.section:last-child {
+	padding-bottom: 160px;
+}
+
 .intro.section {
 	background-image: linear-gradient(transparent, rgba(255, 255, 255, .7) 50%, rgba(255, 255, 255, 1) 100%);
 	background-color: transparent;
 }
 
-.section p + p:not(.quoter):not(.quote) {
+.section:not(.form) p + p:not(.quoter):not(.quote) {
 	margin-top: 2em;
 }
 
@@ -128,7 +132,12 @@ a.brand:hover, a.brand:focus, a.brand.active {
 	margin: auto;
 }
 
-.potato p:not(.quoter), .potato h1, .potato h2, .potato h3, .section h1 {
+
+.section .potato p:not(.quoter),
+.section .potato h1,
+.section .potato h2,
+.section .potato h3,
+.section h1 {
 	text-align: center;
 }
 
@@ -180,12 +189,11 @@ h2, h3, strong, .quoter {
 
 #footer {
 	width: 100%;
-	padding: 20px 17.5%;
 	background: rgba(95, 204, 95, 0.5);
 	box-sizing: border-box;
 }
 
-#footer > p, #footer > address {
+#footer p {
 	display: inline-block;
 }
 
@@ -197,14 +205,13 @@ h2, h3, strong, .quoter {
 	color: rgba(255, 255, 255, 1);
 }
 
-address {
+#footer .contact-us {
 	float: right;
-	margin: 16px 0;
 }
 
 #logo {
 	position: absolute;
-	bottom: 60px;
+	bottom: 30px;
 	right: 60px;
 }
 
@@ -230,26 +237,120 @@ li {
 }
 
 .actions li a {
-	display: block;
 	width: 65%;
-	padding: 10px;
-	margin: 0 auto;
-	border: 4px solid rgba(95, 204, 95, 0.5);
-	box-sizing: border-box;
 	text-align: center;
-
-	color: rgba(96,142,83, 1);
-	font-family: "Muli", Helvetica, sans-serif;
 	text-transform: lowercase;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.actions li a, button {
+	display: block;
+	box-sizing: border-box;
+	letter-spacing: 0.05em;
+	padding: 0.5em;
 
-	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	border: 0.25em solid rgba(95, 204, 95, 1);
+	background-color: rgba(95, 204, 95, 1);
+	color: #FFF;
+	font-weight: 600;
+
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-.actions li a:hover, .actions li a:focus {
-	background-color: rgba(95, 204, 95, 0.5);
-	color: #333;
+.actions li a:hover, button:hover {
+	background-color: rgba(95, 204, 95, 0.25);
 }
 
+.actions li a:hover, .actions li a:focus, .actions li a.active, button:hover {
+	color: rgba(95, 204, 95, 1);
+	border-color: transparent;
+}
+
+.actions li a:focus, .actions li a.active{
+	background-color: transparent;
+}
+
+.actions li a::before {
+  content: "\2b";
+  font-style: normal;
+  font-weight: 600;
+  padding-right: 0.5em;
+}
+
+.closed {
+	max-height: 0;
+	display: none;
+	padding: 0;
+}
+
+.action-viewer form {
+	margin: auto;
+	position: relative;
+}
+
+.action-viewer form::after {
+	display: none;
+	opacity: 0;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 1);
+	content: 'Saving...';
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 120px;
+	left: 0;
+	top: 0;
+	color: rgba(95, 204, 95, 1);
+
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.action-viewer form.submitting::after {
+	display: block;
+	opacity: 0.75;
+}
+
+.action-viewer .requirements {
+	font-size: 0.85em;
+	text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.form-group {
+	margin-bottom: 1em;
+}
+
+.form-group button {
+	font-size: 0.85em;
+}
+
+.form-group label{
+	font-weight: 600;
+	display: block;
+	font-size: 0.75em;
+}
+
+.form-group input, textarea {
+	font-size: 0.85em;
+	border: 1px dotted rgba(95, 204, 95, 1);
+	padding: 0.25em 0.5em;
+	line-height: 2em;
+	width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input:focus, textarea:focus, button:focus {
+	outline: none;
+}
+
+.form-group input:focus, textarea:focus {
+	border: 1px solid rgba(95, 204, 95, 1);
+}
 
 @media (min-width: 530px) {
 
@@ -321,6 +422,10 @@ li {
 
 	#header ul {
 		width: 70%;
+	}
+
+	.action-viewer form{
+		width: 50%;
 	}
 
 }
