@@ -295,7 +295,7 @@ li {
 	display: inline-block;
 	position: relative;
 	width: 100%;
-	margin: 1em 0;
+	margin: 0 0 0.5em 0;
 }
 
 .units ul {
@@ -388,10 +388,20 @@ li {
 	border: none;
 }
 
-.form-group > label{
+.form-group > label {
 	font-weight: 600;
 	display: block;
 	font-size: 0.75em;
+}
+
+.form-group > label::after {
+	content: '(required)';
+	opacity: 0.5;
+	font-weight: 400;
+	font-size: 0.75em;
+	display: inline-block;
+	margin: 0 0.25em;
+	float: right;
 }
 
 .form-group input, textarea {
@@ -406,6 +416,13 @@ li {
 .form-group textarea {
 	min-height: 160px;
 	resize: none;
+}
+
+button[disabled]{
+	background-color: transparent;
+	border: 1px dotted rgba(95, 204, 95, 1);
+	color: rgba(95, 204, 95, 1);
+	cursor: not-allowed;
 }
 
 .form-group input:focus, textarea:focus, button:focus {

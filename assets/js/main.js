@@ -58,7 +58,11 @@ function handleForms(actionsElement){
 
   function activateAction(action, clickedActionElement){
     var actionContainer = document.getElementById(action);
-    var submitButton = actionContainer.getElementsByTagName('button');
+    var actionForm = actionContainer.getElementsByTagName('form')[0];
+    var submitButton = actionContainer.getElementsByTagName('button')[0];
+    var inputs = actionForm.querySelectorAll('input[type=text], input[type=email], textarea');
+    var checks = actionForm.querySelectorAll('input[type=checkbox]');
+
     var actionTop;
 
     actionContainer.classList.remove('closed');
@@ -67,20 +71,45 @@ function handleForms(actionsElement){
     actionTop = actionContainer.getBoundingClientRect().top;
     animatedScrollTo(document.body, window.scrollY + actionTop - 100, 500);
 
-    submitButton[0].addEventListener('click', _.partial(submitForm, action));
+    actionForm.addEventListener('keyup', checkValid);
+    actionForm.addEventListener('change', checkValid);
+
+    submitButton.setAttribute('disabled', true);
+    submitButton.addEventListener('click', _.partial(submitForm, action));
     active = action;
+
+    function checkValid(changeEvent){
+      var valid = true;
+
+      Array.prototype.forEach.call(inputs, function(input){
+        if(input.value.length == 0){
+          valid = false;
+        }
+      });
+
+      if(checks.length > 0 && this.querySelectorAll('input[type=checkbox]:checked').length == 0){
+        valid = false;
+      }
+
+      if(valid){
+        submitButton.removeAttribute('disabled');
+      } else if(!submitButton.disabled) {
+        submitButton.setAttribute('disabled', true);
+      }
+    }
   }
 
   function deactivateAction(action){
     var pastActionElement = actionsElement.querySelector('[href="#'+action+'"]');
     var actionContainer = document.getElementById(action);
-    var submitButton = actionContainer.getElementsByTagName('button');
+    var actionForm = actionContainer.getElementsByTagName('form')[0];
+    var submitButton = actionContainer.getElementsByTagName('button')[0];
 
     actionContainer.classList.add('closed');
     pastActionElement.classList.remove('active');
     pastActionElement.blur();
 
-    submitButton[0].removeEventListener('click', _.partial(submitForm, action));
+    submitButton.removeEventListener('click', _.partial(submitForm, action));
   }
 
   function submitForm(action, mouseEvent){
