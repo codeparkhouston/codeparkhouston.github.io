@@ -3,10 +3,12 @@
 var menuElement = document.getElementById('header');
 var actionsElement = document.getElementById('actions');
 var textareas = document.getElementsByTagName('textarea');
+var formsElements = document.getElementsByTagName('form');
 
 handleTopics(menuElement);
-handleForms(actionsElement);
+handleActions(actionsElement);
 handleTextareas(textareas);
+handleForms(formsElements);
 
 function handleTextareas(textareas){
   Array.prototype.forEach.call(textareas, handleTextarea);
@@ -25,7 +27,51 @@ function handleTextareas(textareas){
 }
 
 
-function handleForms(actionsElement){
+function handleForms(formsElements){
+  Array.prototype.forEach.call(formsElements, handleForm);
+
+  function handleForm(formElement){
+    var inputs = formElement.querySelectorAll('input[type=text], input[type=email], textarea');
+    var checks = formElement.getElementsByClassName('form-check-group');
+    var submitButton = formElement.getElementsByTagName('button')[0];
+    var checkValid = _.debounce(_checkValid.bind(formElement), 100);
+
+    formElement.addEventListener('keyup', checkValid);
+    formElement.addEventListener('change', checkValid);
+
+    checkValid.call(formElement);
+
+    function _checkValid(){
+      var valid = true;
+
+      Array.prototype.forEach.call(inputs, function(input){
+        if(input.value.length == 0){
+          valid = false;
+          input.parentNode.classList.remove('valid');
+        } else {
+          input.parentNode.classList.add('valid');
+        }
+      });
+
+      Array.prototype.forEach.call(checks, function(check){
+        if(check.querySelectorAll('input[type=checkbox]:checked').length == 0){
+          valid = false;
+          check.parentNode.classList.remove('valid');
+        } else {
+          check.parentNode.classList.add('valid');
+        }
+      });
+
+      if(valid){
+        submitButton.removeAttribute('disabled');
+      } else if(!submitButton.disabled) {
+        submitButton.setAttribute('disabled', true);
+      }
+    }
+  }
+}
+
+function handleActions(actionsElement){
 
   var url = 'https://script.google.com/macros/s/AKfycbw5eVzBNXlIJEsfaSUWCUG9kaYN9wypZu50QMCMOnBZcaaRnlU/exec';
   var active = '';
@@ -58,11 +104,7 @@ function handleForms(actionsElement){
 
   function activateAction(action, clickedActionElement){
     var actionContainer = document.getElementById(action);
-    var actionForm = actionContainer.getElementsByTagName('form')[0];
     var submitButton = actionContainer.getElementsByTagName('button')[0];
-    var inputs = actionForm.querySelectorAll('input[type=text], input[type=email], textarea');
-    var checks = actionForm.querySelectorAll('input[type=checkbox]');
-
     var actionTop;
 
     actionContainer.classList.remove('closed');
@@ -71,32 +113,8 @@ function handleForms(actionsElement){
     actionTop = actionContainer.getBoundingClientRect().top;
     animatedScrollTo(document.body, window.scrollY + actionTop - 100, 500);
 
-    actionForm.addEventListener('keyup', checkValid);
-    actionForm.addEventListener('change', checkValid);
-
-    checkValid.call(actionForm);
     submitButton.addEventListener('click', _.partial(submitForm, action));
     active = action;
-
-    function checkValid(){
-      var valid = true;
-
-      Array.prototype.forEach.call(inputs, function(input){
-        if(input.value.length == 0){
-          valid = false;
-        }
-      });
-
-      if(checks.length > 0 && this.querySelectorAll('input[type=checkbox]:checked').length == 0){
-        valid = false;
-      }
-
-      if(valid){
-        submitButton.removeAttribute('disabled');
-      } else if(!submitButton.disabled) {
-        submitButton.setAttribute('disabled', true);
-      }
-    }
   }
 
   function deactivateAction(action){

@@ -296,10 +296,6 @@ li {
 	position: relative;
 	width: 100%;
 	margin: 0 0 0.5em 0;
-}
-
-.units ul {
-	margin: 0;
 	padding: 0;
 	list-style: none;
 }
@@ -338,8 +334,8 @@ li {
 .units label::after {
 	font-style: italic;
 	font-weight: 600;
-	font-size: 0.5em;
-	line-height: 3em;
+	font-size: 0.65em;
+	line-height: 2.5em;
 	content: attr(data-unit-id);
 }
 
@@ -404,6 +400,11 @@ li {
 	float: right;
 }
 
+.form-group.valid > label::after {
+	content: "\2713 ";
+	color: rgba(95, 204, 95, 1);
+}
+
 .form-group input, textarea {
 	font-size: 0.85em;
 	line-height: 1.5em;
@@ -425,11 +426,11 @@ button[disabled]{
 	cursor: not-allowed;
 }
 
-.form-group input:focus, textarea:focus, button:focus {
+input:focus, textarea:focus, button:focus {
 	outline: none;
 }
 
-.form-group input:focus, textarea:focus {
+.form-group input:focus, .form-group textarea:focus, .form-group.valid input, .form-group.valid textarea {
 	border: 1px solid rgba(95, 204, 95, 1);
 }
 
