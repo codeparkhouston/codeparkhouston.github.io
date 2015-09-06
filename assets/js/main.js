@@ -74,11 +74,11 @@ function handleForms(actionsElement){
     actionForm.addEventListener('keyup', checkValid);
     actionForm.addEventListener('change', checkValid);
 
-    submitButton.setAttribute('disabled', true);
+    checkValid.call(actionForm);
     submitButton.addEventListener('click', _.partial(submitForm, action));
     active = action;
 
-    function checkValid(changeEvent){
+    function checkValid(){
       var valid = true;
 
       Array.prototype.forEach.call(inputs, function(input){
