@@ -59,9 +59,13 @@ function handleForms(actionsElement){
   function activateAction(action, clickedActionElement){
     var actionContainer = document.getElementById(action);
     var submitButton = actionContainer.getElementsByTagName('button');
+    var actionTop;
 
     actionContainer.classList.remove('closed');
     clickedActionElement.classList.add('active');
+
+    actionTop = actionContainer.getBoundingClientRect().top;
+    animatedScrollTo(document.body, window.scrollY + actionTop - 100, 500);
 
     submitButton[0].addEventListener('click', _.partial(submitForm, action));
     active = action;

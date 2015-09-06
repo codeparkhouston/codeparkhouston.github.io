@@ -3,10 +3,10 @@
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic,400italic,700,700italic,900,900italic,100italic' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="./normalize.css">
-		<link type="text/css" rel="stylesheet" href="./student-slides.css"/>
-		<link type="text/css" rel="stylesheet" href="./style.css"/>
-		<title>Code Park | Code Park Houston</title>
+		<link rel="stylesheet" type="text/css" href="./assets/styles/normalize.css">
+		<link type="text/css" rel="stylesheet" href="./assets/styles/student-slides.css"/>
+		<link type="text/css" rel="stylesheet" href="./assets/styles/style.css"/>
+		<title>Code Park Houston</title>
 	</head>
 
 	<body>
@@ -52,19 +52,19 @@
 
 			<div id="students-say" class="section css-slideshow">
 					<div class="student">
-						<img src="avatar.png" />
+						<img src="./assets/images/avatar.png" />
 						<p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis quam pellentesque, pretium leo eget, dictum lacus. Nulla ullamcorper massa sapien, at suscipit nulla molestie quis.</p>
 						<p class="quoter">Aaron O.</p>
 					</div>
 
 					<div class="student">
-						<img src="avatar.png" />
+						<img src="./assets/images/avatar.png" />
 						<p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis quam pellentesque, pretium leo eget, dictum lacus. Nulla ullamcorper massa sapien, at suscipit nulla molestie quis.</p>
 						<p class="quoter">Aaron O.</p>
 					</div>
 
 					<div class="student">
-						<img src="avatar.png" />
+						<img src="./assets/images/avatar.png" />
 						<p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis quam pellentesque, pretium leo eget, dictum lacus. Nulla ullamcorper massa sapien, at suscipit nulla molestie quis. Sed gravida nisl vitae magna ultricies consequat.  Praesent tempor eros id arcu blandit consequat. Etiam ac ligula nibh. Phasellus venenatis odio velit, eu tristique massa cursus quis. Nunc congue sit amet odio at auctor.</p>
 						<p class="quoter">Aaron O.</p>
 					</div>
@@ -87,7 +87,7 @@
 							<p><small>for <i>Summer 2016</i></small></p>
 						</li>
 						<li>
-							<a href="#volunteer">Volunteer to Teach</a>
+							<a href="#volunteer">Volunteer to Mentor</a>
 							<p><small>for <i>Fall 2015</i></small></p>
 						</li>
 					</ul>
@@ -100,14 +100,11 @@
 				<!-- project form -->
 					<div class="closed" id="project">
 						<h2>
-							Submit a project!
+							Submit a project
 						</h2>
 						<p>
-							Projects for students to complete in Spring 2016 by May 31st.
+							For students to complete in <i>Spring 2016</i> by May 31st.
 						</p>
-						<ul class="requirements">
-							<li>Being in the classroom Monday &amp; Thursday, 3:45 - 5:45 pm</li>
-						</ul>
 						<form>
 							<div class="form-group">
 								<label for="project-name">Your Name</label>
@@ -140,6 +137,7 @@
 						<h2>
 							Submit a position for interns
 						</h2>
+						<p><i>Summer 2016</i></p>
 						<form>
 							<div class="form-group">
 								<label for="intern-name">Your Name</label>
@@ -148,6 +146,10 @@
 							<div class="form-group">
 								<label for="intern-email">Email</label>
 								<input type="email" name="email" id="intern-email">
+							</div>
+							<div class="form-group">
+								<label for="intern-comments">What are you looking for?</label>
+								<textarea name="comments" id="intern-comments"></textarea>
 							</div>
 							<div class="form-group">
 								<button>Let's do this!</button>
@@ -165,14 +167,14 @@
 							Mentor students on projects for a unit
 						</h2>
 						<p>
-							For about two weeks in Fall 2015, join us by:
+							For about two weeks in <i>Fall 2015</i>, help us:
 						</p>
 						<ul class="requirements">
-							<li>Being in the classroom Monday &amp; Thursday, 3:45 - 5:45 pm</li>
-							<li>Helping students with JavaScript</li>
-							<li>Providing tips and support with using Sublime</li>
-							<li>Commenting on code on GitHub outside of class times</li>
-							<li>Sharing your enthusiasm and patience for coding</li>
+							<li>Be in the classroom <strong>Monday &amp; Thursday, 3:45 - 5:45 pm</strong></li>
+							<li>Guide students coding in <strong>JavaScript</strong></li>
+							<li>Provide tips and support with using <strong>Sublime</strong></li>
+							<li>Comment on code on <strong>GitHub</strong> outside of class times</li>
+							<li>Share your <strong>enthusiasm and patience</strong> for coding</li>
 						</ul>
 						<form>
 							<div class="form-group">
@@ -192,7 +194,7 @@
 								<input type="text" name="github" id="volunteer-github">
 							</div>
 							<div class="form-group">
-								<label for="volunteer-comments">Why would you like to volunteer?</label>
+								<label for="volunteer-comments">Why do you want to volunteer?</label>
 								<textarea name="comments" id="volunteer-comments"></textarea>
 							</div>
 							<div class="form-group">
@@ -215,10 +217,11 @@
 			</div>
 		</div>
 
-		<img src="./codepark.png" id="logo"/>
+		<img src="./assets/images/codepark.png" id="logo"/>
 	</div>
-	<script type="text/javascript" src="animated-scrollto.js"></script>
-	<script type="text/javascript" src="lodash.js"></script>
-	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="./assets/js/lib/animated-scrollto.js"></script>
+	<script type="text/javascript" src="./assets/js/lib/interact.min.js"></script>
+	<script type="text/javascript" src="./assets/js/lib/lodash.js"></script>
+	<script type="text/javascript" src="./assets/js/main.js"></script>
 	</body>
 </html>
