@@ -246,14 +246,15 @@ li {
 	margin: 0 auto;
 }
 .actions li a, button {
+	font-family: "Muli", Helvetica, sans-serif;
+	letter-spacing: 0.05em;
+
 	display: block;
 	box-sizing: border-box;
-	letter-spacing: 0.05em;
 	padding: 0.75em 1.5em;
 
 	background-color: rgba(95, 204, 95, 1);
 	color: #FFF;
-	font-family: "Muli", Helvetica, sans-serif;
 
   -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -288,6 +289,63 @@ li {
 .action-viewer form {
 	margin: auto;
 	position: relative;
+}
+
+.units {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	margin: 1em 0;
+}
+
+.units ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.units label{
+	font-size: 0.85em;
+	line-height: 1.5em;
+	padding: 0.25em 0.5em;
+
+	display: block;
+	width: 100%;
+	cursor: pointer;
+
+  box-sizing: border-box;
+  border: 1px solid transparent;
+
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.units input[type=checkbox] {
+	display: none;
+}
+
+.units input:checked + label {
+	border-style: solid;
+	border-color: rgba(95, 204, 95, 1);
+}
+
+.units label:hover {
+	border-style: dotted;
+	border-color: rgba(95, 204, 95, 1);
+}
+
+.units label::after {
+	font-style: italic;
+	font-weight: 600;
+	font-size: 0.5em;
+	line-height: 3em;
+	content: attr(data-unit-id);
+}
+
+.units label::after {
+	content: attr(data-unit-start) ' - ' attr(data-unit-end);
+	float: right;
 }
 
 .action-viewer form::after {
@@ -330,7 +388,7 @@ li {
 	border: none;
 }
 
-.form-group label{
+.form-group > label{
 	font-weight: 600;
 	display: block;
 	font-size: 0.75em;
@@ -338,9 +396,9 @@ li {
 
 .form-group input, textarea {
 	font-size: 0.85em;
-	border: 1px dotted rgba(95, 204, 95, 1);
-	padding: 0.25em 0.5em;
 	line-height: 1.5em;
+	padding: 0.25em 0.5em;
+	border: 1px dotted rgba(95, 204, 95, 1);
 	width: 100%;
   box-sizing: border-box;
 }

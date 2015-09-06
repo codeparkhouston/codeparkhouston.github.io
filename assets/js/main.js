@@ -84,12 +84,24 @@ function handleForms(actionsElement){
   }
 
   function submitForm(action, mouseEvent){
+    var checks = this.parentNode.parentNode.querySelectorAll('input[type=checkbox]:checked');
     var formData, formSubmit;
     mouseEvent.preventDefault();
     this.parentNode.parentNode.classList.add('submitting');
 
     formData = new FormData(this.parentNode.parentNode);
     formData.append('sheet_name', action);
+    var checkValues = {};
+
+    Array.prototype.forEach.call(checks, function(checkbox){
+      var checkName = checkbox.name.replace('[]', '');
+      checkValues[checkName] = checkValues[checkName] || [];
+      checkValues[checkName].push(checkbox.value);
+    });
+
+    _.each(checkValues, function(checkValue, name){
+      formData.append(name, checkValue.join(', '));
+    });
 
     formSubmit = new XMLHttpRequest();
     formSubmit.addEventListener("load", submitComplete.bind(this));
@@ -97,9 +109,10 @@ function handleForms(actionsElement){
     formSubmit.send(formData);
 
     function submitComplete () {
+      var thankYou = this.parentNode.parentNode.parentNode.getElementsByClassName('thank-you');
       this.parentNode.parentNode.classList.remove('submitting');
       this.parentNode.parentNode.classList.add('closed');
-      this.parentNode.parentNode.nextElementSibling.classList.remove('closed');
+      thankYou[0].classList.remove('closed');
     }
   }
 
