@@ -10,6 +10,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
+	line-height: 1.25em;
 
 	background-image: linear-gradient(rgba(255, 255, 150, .9) 25%, rgba(255, 255, 150, .9) 100%), url(../images/banner.jpg);
 	background-size: cover;
@@ -301,7 +302,6 @@ li {
 }
 
 .units label{
-	font-size: 0.85em;
 	line-height: 1.5em;
 	padding: 0.25em 0.5em;
 
@@ -405,6 +405,11 @@ li {
 	color: rgba(95, 204, 95, 1);
 }
 
+.form-group.not-email > label::after {
+	content: '(please enter an email)';
+	color: #333;
+}
+
 .form-group input, textarea {
 	font-size: 0.85em;
 	line-height: 1.5em;
@@ -434,7 +439,7 @@ input:focus, textarea:focus, button:focus {
 	border: 1px solid rgba(95, 204, 95, 1);
 }
 
-@media (min-width: 530px) {
+@media screen and (min-width: 530px) {
 
 	#header {
 		display: block;
@@ -458,7 +463,7 @@ input:focus, textarea:focus, button:focus {
 
 }
 
-@media (min-width: 650px) {
+@media screen and (min-width: 650px) {
 
 	#header ul {
 		text-align: right;
@@ -466,19 +471,7 @@ input:focus, textarea:focus, button:focus {
 
 }
 
-@media (min-width: 854px) {
-
-	.actions li {
-		width: 33%;
-	}
-
-	.actions li a {
-		width: 90%;
-	}
-
-}
-
-@media (min-width: 964px) {
+@media screen and (min-width: 964px) {
 
   .potato, .css-slideshow .student, #header ul {
     width: 80%;
@@ -493,7 +486,23 @@ input:focus, textarea:focus, button:focus {
 
 }
 
-@media (min-width: 1182px) {
+@media screen and (min-width: 1000px) {
+
+	.actions li {
+		width: 33%;
+	}
+
+	.actions li a {
+		width: 90%;
+	}
+
+	.units label{
+		font-size: 0.85em;
+	}
+
+}
+
+@media screen and (min-width: 1182px) {
 
   .potato, .css-slideshow .student, #header ul {
     width: 70%;
