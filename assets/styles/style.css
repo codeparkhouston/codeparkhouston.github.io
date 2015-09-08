@@ -302,8 +302,13 @@ li {
 }
 
 .units label{
-	line-height: 1.5em;
 	padding: 0.25em 0.5em;
+	text-align: right;
+
+	font-style: italic;
+	font-weight: 300;
+	font-size: 0.65em;
+	line-height: 2.5em;
 
 	display: block;
 	width: 100%;
@@ -332,16 +337,10 @@ li {
 }
 
 .units label::after {
-	font-style: italic;
-	font-weight: 600;
-	font-size: 0.65em;
-	line-height: 2.5em;
-	content: attr(data-unit-id);
-}
-
-.units label::after {
 	content: attr(data-unit-start) ' - ' attr(data-unit-end);
-	float: right;
+	font-weight: 600;
+	font-style: none;
+	float: left;
 }
 
 .action-viewer form::after {
