@@ -194,10 +194,10 @@ h2, h3, strong, .quoter {
 	box-sizing: border-box;
 	font-size: 0.75em;
 	padding: 0.5em 0;
+	font-weight: 400;
 }
-
-#footer p {
-	display: inline-block;
+#footer .potato {
+	position: relative;
 }
 
 #footer a {
@@ -208,14 +208,23 @@ h2, h3, strong, .quoter {
 	color: rgba(255, 255, 255, 1);
 }
 
+#footer p {
+	margin: 0;
+}
+
+#footer span {
+	font-weight: 300;
+}
+
 #footer .contact-us {
 	float: right;
+	display: inline-block;
 }
 
 #logo {
 	position: absolute;
-	bottom: 30px;
-	right: 60px;
+	bottom: 60%;
+	right: -20px;
 }
 
 li {
