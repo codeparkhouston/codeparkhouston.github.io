@@ -1,12 +1,13 @@
 
 
 var menuElement = document.getElementById('header');
-var actionsElement = document.getElementById('actions');
+// var actionsElement = document.getElementById('actions');
 var textareas = document.getElementsByTagName('textarea');
 var formsElements = document.getElementsByTagName('form');
 
 handleTopics(menuElement);
-handleActions(actionsElement);
+// handleActions(actionsElement);
+handleActions();
 handleTextareas(textareas);
 handleForms(formsElements);
 
@@ -84,23 +85,24 @@ function handleForms(formsElements){
 
 }
 
-function handleActions(actionsElement){
+function handleActions(){
 
   var url = 'https://script.google.com/macros/s/AKfycbw5eVzBNXlIJEsfaSUWCUG9kaYN9wypZu50QMCMOnBZcaaRnlU/exec';
   var active = '';
-  var actionItemElements = actionsElement.getElementsByTagName('a');
+  // var actionItemElements = actionsElement.getElementsByTagName('a');
   var form = document.getElementById('form');
-  initializeActionItems(actionItemElements)
+  // initializeActionItems(actionItemElements)
 
+  setFormAction('volunteer', {preventDefault: function(){}});
 
-  function initializeActionItems(actionItemElements){
-    Array.prototype.forEach.call(actionItemElements, initializeActionItem);
-  }
+  // function initializeActionItems(actionItemElements){
+  //   Array.prototype.forEach.call(actionItemElements, initializeActionItem);
+  // }
 
-  function initializeActionItem(actionItem){
-    var action = actionItem.hash.replace('#', '');
-    actionItem.addEventListener('click', _.partial(setFormAction, action));
-  }
+  // function initializeActionItem(actionItem){
+  //   var action = actionItem.hash.replace('#', '');
+  //   actionItem.addEventListener('click', _.partial(setFormAction, action));
+  // }
 
   function setFormAction(action, mouseEvent){
     mouseEvent.preventDefault();
@@ -121,7 +123,7 @@ function handleActions(actionsElement){
     var actionTop;
 
     actionContainer.classList.remove('closed');
-    clickedActionElement.classList.add('active');
+    // clickedActionElement.classList.add('active');
 
     actionTop = actionContainer.getBoundingClientRect().top;
     animatedScrollTo(document.body, window.scrollY + actionTop - 100, 500);
@@ -131,14 +133,14 @@ function handleActions(actionsElement){
   }
 
   function deactivateAction(action){
-    var pastActionElement = actionsElement.querySelector('[href="#'+action+'"]');
+    // var pastActionElement = actionsElement.querySelector('[href="#'+action+'"]');
     var actionContainer = document.getElementById(action);
     var actionForm = actionContainer.getElementsByTagName('form')[0];
     var submitButton = actionContainer.getElementsByTagName('button')[0];
 
     actionContainer.classList.add('closed');
-    pastActionElement.classList.remove('active');
-    pastActionElement.blur();
+    // pastActionElement.classList.remove('active');
+    // pastActionElement.blur();
 
     submitButton.removeEventListener('click', _.partial(submitForm, action));
   }
