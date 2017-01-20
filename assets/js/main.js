@@ -7,7 +7,7 @@ var formsElements = document.getElementsByTagName('form');
 
 handleTopics(menuElement);
 // handleActions(actionsElement);
-handleActions();
+// handleActions();
 handleTextareas(textareas);
 handleForms(formsElements);
 
@@ -124,9 +124,6 @@ function handleActions(){
 
     actionContainer.classList.remove('closed');
     // clickedActionElement.classList.add('active');
-
-    actionTop = actionContainer.getBoundingClientRect().top;
-    animatedScrollTo(document.body, window.scrollY + actionTop - 100, 500);
 
     submitButton.addEventListener('click', _.partial(submitForm, action));
     active = action;
