@@ -1,4 +1,5 @@
-// For Deploying to Heroku.  See https://github.com/heroku/heroku-buildpack-static for details.
 {
-  "root": ""
+  "root": "./",
+  "clean_urls": true,
+  "https_only": true
 }
