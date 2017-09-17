@@ -83,7 +83,7 @@ a:hover, a:focus {
 }
 
 .section:not(:last-child) {
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 .section:last-child {
@@ -430,6 +430,16 @@ li {
 .form-group textarea {
 	min-height: 160px;
 	resize: none;
+}
+
+#about-us .row {
+	margin-bottom: 2em;
+}
+
+#about-us img {
+	width: 100%;
+	margin: 0 auto 1em;
+	display: block;
 }
 
 button[disabled]{
